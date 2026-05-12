@@ -1,0 +1,15 @@
+{
+  "dashboard": "rust",
+  "published_at_hkt": "2026-05-12T09:25:13+08:00",
+  "source_date": "2026-05-12",
+  "files": [
+    "index.html",
+    "online_pnl.html",
+    "tieout_index.html",
+    "tieout_index_24h.html",
+    "tieout_pnlcumsum.html",
+    "tieout_pnlcumsum_24h.html",
+    "tieout_tte1min.html",
+    "tieout_tte1min_24h.html"
+  ]
+}

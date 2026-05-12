@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<title>Rust Bot Signal Dashboard</title>
+<style>
+:root {
+  --navy: #1F3B66; --navy-deep: #122844; --gold: #C19A3E;
+  --gold-deep: #9C7B3D;
+  --gray-warm: #9A8E80; --gray-warm-dark: #5C5147;
+  --bg: #fdfdfb; --bg-soft: #f5f3ed;
+  --rule: #d9d4c8; --rule-strong: #5C5147;
+  --pos: #1F6F3F; --neg: #B8345B;
+  --accent: #B8345B;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 14px; line-height: 1.55; color: #232323;
+  background: var(--bg); margin: 0;
+  display: flex; align-items: stretch;
+}
+.sidebar {
+  width: 240px; flex-shrink: 0; background: var(--bg-soft);
+  border-right: 1px solid var(--rule); padding: 28px 18px 32px;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto; font-size: 13px;
+}
+.sidebar .brand-mini {
+  font-family: Georgia, serif; font-weight: 600; color: var(--navy);
+  font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  border-bottom: 1px solid var(--rule); padding-bottom: 10px; margin-bottom: 14px;
+}
+.sidebar .brand-mini .date {
+  display: block; font-size: 11px;
+  font-family: "JetBrains Mono", Consolas, monospace;
+  color: var(--gray-warm-dark); letter-spacing: 0.04em;
+  margin-top: 4px; text-transform: none; font-weight: 500;
+}
+.sidebar .section { margin-top: 20px; }
+.sidebar .section-title {
+  font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold-deep); font-weight: 700; margin-bottom: 8px; padding-left: 4px;
+}
+.sidebar a.nav-link {
+  display: block; padding: 6px 10px; color: var(--navy-deep);
+  text-decoration: none; border-left: 2px solid transparent; margin-bottom: 1px;
+  font-size: 12.5px;
+}
+.sidebar a.nav-link:hover { background: white; border-left-color: var(--gold); }
+.sidebar a.nav-link.active {
+  background: var(--navy); color: white;
+  border-left-color: var(--gold); font-weight: 600;
+}
+.sidebar a.nav-link.sub { padding-left: 22px; font-size: 11.5px; position: relative; }
+.sidebar a.nav-link.sub::before {
+  content: "·"; position: absolute; left: 12px; color: var(--gray-warm);
+}
+.sidebar a.nav-link code {
+  font-family: "JetBrains Mono", Consolas, monospace; font-size: 10.5px;
+  background: transparent;
+}
+main.content { flex: 1; min-width: 0; }
+.page { max-width: 1320px; margin: 0 auto; padding: 36px 44px 64px; }
+@media (max-width: 900px) {
+  body { display: block; }
+  .sidebar { width: 100%; height: auto; position: static;
+              border-right: none; border-bottom: 1px solid var(--rule);
+              padding: 16px 20px; }
+  .page { padding: 22px 20px 40px; }
+}
+.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px;
+            margin-bottom: 22px; }
+.masthead .brand { font-family: Georgia, serif; font-size: 22px;
+                    color: var(--navy); font-weight: 600;
+                    text-transform: uppercase; letter-spacing: 0.04em; }
+.masthead .badge {
+  display: inline-block; background: var(--accent); color: white;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  padding: 2px 8px; border-radius: 2px; vertical-align: middle;
+  margin-left: 8px;
+}
+.masthead .subtitle { font-size: 13px; color: var(--gray-warm-dark);
+                       margin-top: 6px; }
+.masthead .meta-row { display: flex; gap: 32px; margin-top: 14px;
+                       flex-wrap: wrap; font-size: 12px;
+                       color: var(--gray-warm-dark); letter-spacing: 0.03em; }
+.masthead .meta-row span b { color: var(--navy-deep); font-weight: 600; }
+.masthead code { background: var(--bg-soft); padding: 1px 5px; border-radius: 2px;
+                  font-family: "JetBrains Mono", Consolas, monospace;
+                  font-size: 11px; color: var(--navy-deep); }
+h1 { font-family: Georgia, serif; color: var(--navy); font-size: 24px;
+      border-bottom: 1px solid var(--rule); padding-bottom: 8px;
+      margin: 8px 0 18px; }
+h2 { font-family: Georgia, serif; color: var(--navy); font-size: 17px;
+      margin: 32px 0 12px; padding-left: 10px; border-left: 3px solid var(--gold); }
+.card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+              margin: 12px 0 24px; }
+.card { background: white; border: 1px solid var(--rule);
+        padding: 18px 22px; }
+.card h3 { font-family: Georgia, serif; color: var(--navy-deep);
+            font-size: 15px; margin: 0 0 8px; }
+.card p { margin: 6px 0; font-size: 13px; color: var(--gray-warm-dark); }
+.card a { color: var(--navy); font-weight: 600; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+.note { background: var(--bg-soft); border-left: 3px solid var(--gold);
+         padding: 10px 16px; margin: 12px 0 22px;
+         font-size: 13px; color: var(--gray-warm-dark); }
+.footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--rule);
+           color: var(--gray-warm-dark); font-size: 11px; letter-spacing: 0.04em; }
+.footer code { background: var(--bg-soft); padding: 1px 5px; border-radius: 2px; }
+@media (max-width: 1100px) { .card-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand-mini">
+    Signal Dashboard · RUST
+    <span class="date">2026-05-12</span>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Rust Bot 实盘</div>
+    <a class="nav-link" href="online_pnl.html">Rust funder PnL</a>
+    <a class="nav-link active" href="index.html">总览</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">线上线下对比 (rust)</div>
+    <a class="nav-link" href="tieout_index.html">总体对比</a>
+    <a class="nav-link sub" href="tieout_pnlcumsum.html"><code>pnlcumsum</code></a>
+    <a class="nav-link sub" href="tieout_tte1min.html"><code>tte1min</code></a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">线上线下对比 · 24h (rust)</div>
+    <a class="nav-link" href="tieout_index_24h.html">总体对比 · 24h</a>
+    <a class="nav-link sub" href="tieout_pnlcumsum_24h.html"><code>pnlcumsum</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_24h.html"><code>tte1min</code></a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">线下回测 (主 dashboard)</div>
+    <a class="nav-link" href="https://tonyli27.github.io/signal-dashboard/" target="_blank" rel="noopener">完整信号回测页 ↗</a>
+  </div>
+</aside>
+<main class="content"><div class="page">
+
+<div class="masthead">
+  <div class="brand">5min BTC · Rust Bot Dashboard <span class="badge">RUST</span></div>
+  <div class="subtitle">
+    Rust bot 是否运行正常？每天对照 frozen-tag 线下回测 + 钱包实盘
+    activity，看 (1) 信号 SR 是否一致 (2) PnL 走向是否对齐。
+    完整线下回测在 <a href="https://tonyli27.github.io/signal-dashboard/" target="_blank">主 dashboard ↗</a>。
+  </div>
+  <div class="meta-row">
+    <span>报告日期 · <b>2026-05-12</b></span>
+    <span>bot · <code>poly_temp_bot</code> (Rust)</span>
+    <span>funder · <code>0x4a19…a961</code></span>
+    <span>生成时间 · 2026-05-12 01:25 UTC</span>
+  </div>
+</div>
+
+<div class="note">
+本 dashboard 仅用于 <b>验证新 Rust bot 行为</b>。所有线下数据
+（<code>trades_alt_5min.parquet</code> / <code>orderbook_prices_5min_1min.parquet</code>
+/ 各信号 <code>per_trade_pnl.parquet</code>）依赖
+<b>主 dashboard 早上 08:00 跑完</b>，本 dashboard 09:00 起跑，<b>不修改任何外部数据</b>。
+</div>
+
+<h2>立即查看</h2>
+<div class="card-grid">
+  <div class="card">
+    <h3>Rust funder 实盘 PnL</h3>
+    <p>钱包 <code>0x4a19…a961</code> 从 bot 首次启动开始的 BTC 5min 实盘账户 PnL，
+       单市场聚合 + 5min 重采样。</p>
+    <p><a href="online_pnl.html">→ 打开 PnL 页</a></p>
+  </div>
+  <div class="card">
+    <h3>线上线下对比 · 总体</h3>
+    <p>两个信号合并的 offline-combined PnL vs Rust bot SR-replay vs 实盘 PnL；
+       价格延迟 / 执行成本三段对比表（待 Rust bot 日志完善后可用）。</p>
+    <p><a href="tieout_index.html">→ 打开 Tie-Out 总览</a></p>
+  </div>
+  <div class="card">
+    <h3>Tie-Out · pnlcumsum</h3>
+    <p>每个信号 4 张图：SR 时序、SR 散点 + 拟合、Net PnL 累计、进入市场 Venn。</p>
+    <p><a href="tieout_pnlcumsum.html">→ pnlcumsum 子页</a></p>
+  </div>
+  <div class="card">
+    <h3>Tie-Out · tte1min</h3>
+    <p>TTE=1 信号的同样四张对比图。</p>
+    <p><a href="tieout_tte1min.html">→ tte1min 子页</a></p>
+  </div>
+</div>
+
+<h2>排错速查</h2>
+<div class="card-grid">
+  <div class="card">
+    <h3>Rust bot 没产 startup_*.json？</h3>
+    <p>tie-out 会直接报 <code>No startup snapshots — nothing to compare</code>。
+       去 <code>poly_temp_bot/state/bitcoin_5min/</code> 看是否有
+       <code>startup_*.json</code>；没有的话 Rust bot 当天没启动。</p>
+  </div>
+  <div class="card">
+    <h3>frozen-tag 找不到？</h3>
+    <p>tie-out 会按 startup 当天的本地日期去
+       <code>signal_dashboard/&lt;signal&gt;/output/&lt;date&gt;/user_tag.parquet</code>
+       找 daily snapshot。如果主 dashboard 当天没跑成功，就需要去补跑
+       <code>python signal_dashboard/&lt;signal&gt;/run_signal.py</code>。</p>
+  </div>
+  <div class="card">
+    <h3>activity API 一直空？</h3>
+    <p>确认 funder address (config.yaml &gt; funder_address) 和
+       <code>online_pnl/calc_pnl.py</code> 里的 <code>ADDRESS</code> 一致。
+       Rust 钱包是 brand new，前几天可能本来就没几笔交易。</p>
+  </div>
+  <div class="card">
+    <h3>SR 不一致（散点偏离 y=x）？</h3>
+    <p>如果 Pearson r &lt; 0.9 或 offset 明显，说明 Rust bot SR 计算或
+       smart-maker tag 加载有 bug。先检查 <code>user_tag_current.json</code>
+       的 <code>max_date</code> 和 <code>n_smart_makers</code> 是否合理。</p>
+  </div>
+</div>
+
+<div class="footer">
+generated by <code>signal_dashboard_for_rust/generate_html.py</code> ·
+2026-05-12 01:25 UTC
+</div>
+
+</div></main></body></html>
