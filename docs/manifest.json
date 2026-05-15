@@ -1,6 +1,6 @@
 {
   "dashboard": "rust",
-  "published_at_hkt": "2026-05-15T10:02:49+08:00",
+  "published_at_hkt": "2026-05-15T23:48:27+08:00",
   "source_date": "2026-05-15",
   "files": [
     "gap_decomposition.html",
@@ -8,8 +8,13 @@
     "gap_decomposition_daily.png",
     "gap_decomposition_lag.png",
     "gap_detail_charts",
+    "gross_pnl_cumsum_comparison.png",
     "index.html",
+    "net_pnl_cumsum_comparison.png",
+    "new_user_big4k_entry45.html",
     "online_pnl.html",
+    "online_tag7k_entry14.html",
+    "summary.csv",
     "tieout_index.html",
     "tieout_index_24h.html",
     "tieout_pnlcumsum.html",
@@ -17,6 +22,7 @@
     "tieout_pnlcumsum_diff_markets.html",
     "tieout_tte1min.html",
     "tieout_tte1min_24h.html",
-    "tieout_tte1min_diff_markets.html"
+    "tieout_tte1min_diff_markets.html",
+    "tte1_conf82_entry07.html"
   ]
 }

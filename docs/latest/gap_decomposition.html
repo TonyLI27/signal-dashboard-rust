@@ -229,8 +229,8 @@ table.kpi tbody tr:hover { background: var(--bg-soft); }
   </div>
 
   <div class="section">
-    <div class="section-title">线下回测 (主 dashboard)</div>
-    <a class="nav-link" href="https://tonyli27.github.io/signal-dashboard/" target="_blank" rel="noopener">完整信号回测页 ↗</a>
+    <div class="section-title">线下回测 (rust 自产)</div>
+    <span class='nav-link' style='color:var(--gray-warm)'>（信号页未生成）</span>
   </div>
 </aside>
 <main class="content"><div class="page">
@@ -297,7 +297,8 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <option value="all">全部</option>
 <option value="2026-05-12">2026-05-12</option>
 <option value="2026-05-13">2026-05-13</option>
-<option value="2026-05-14" selected>2026-05-14</option>
+<option value="2026-05-14">2026-05-14</option>
+<option value="2026-05-15" selected>2026-05-15</option>
 </select></label>
   <label class="dd"><span class="dd-label">类型</span><select id="dd-bucket">
 <option value="all">全部</option>
@@ -445,7 +446,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-12" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-12</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -613,7 +614,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-12" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=40s</span>
     <span class="mc-day">2026-05-12</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -708,10 +709,10 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/online_only/pnlcumsum__0xa44aec6d548b1233205ccc6454c3b1d1030c3e96501d9f58db5caf0570.png" alt="0xa44aec6d548b1233205ccc6454c3b1d1030c3e96501d9f58db5caf05701774f0">
   <div class="mc-foot"><b>real_pnl/share</b>=$-0.640 · shares=5.0 · (only online entered)</div>
 </div>
-<div class="market-card" data-signal="tte1min" data-date="2026-05-12" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
+<div class="market-card" data-signal="tte1min" data-date="2026-05-12" data-bucket="online_only" data-mismatch="others" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-13</span>
+    <span class="mc-mismatch mc-mr-others">others</span>
     <span class="mc-day">2026-05-12</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -764,10 +765,10 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xa17d570da535eefcf51de65173b2688a09708e076010b7af08fd2f1aaa.png" alt="0xa17d570da535eefcf51de65173b2688a09708e076010b7af08fd2f1aaa0ca9b6">
   <div class="mc-foot"><b>real_pnl/share</b>=$+0.020 · shares=5.0 · (only online entered)</div>
 </div>
-<div class="market-card" data-signal="tte1min" data-date="2026-05-12" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
+<div class="market-card" data-signal="tte1min" data-date="2026-05-12" data-bucket="online_only" data-mismatch="others" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-13</span>
+    <span class="mc-mismatch mc-mr-others">others</span>
     <span class="mc-day">2026-05-12</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -1439,7 +1440,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1453,7 +1454,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1537,7 +1538,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1579,7 +1580,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1635,7 +1636,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1677,7 +1678,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-07</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1702,10 +1703,10 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x52842fdbdeb1024f5553c4ec27dabfbb364eaaccf839539d60e9f87b7d.png" alt="0x52842fdbdeb1024f5553c4ec27dabfbb364eaaccf839539d60e9f87b7d0c9e3b">
   <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · shares=5.0 · (only offline entered)</div>
 </div>
-<div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
+<div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-01</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=60s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1733,7 +1734,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=20s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1761,7 +1762,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1775,7 +1776,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=20s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1943,7 +1944,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-10</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-02</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1957,7 +1958,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -1999,7 +2000,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=40s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2041,7 +2042,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-10</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2055,7 +2056,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-12</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-10</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2069,7 +2070,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2080,10 +2081,10 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xc3a25dfe4fed78ed082e1940b78e598101ec8bef58871f4b929e20821e.png" alt="0xc3a25dfe4fed78ed082e1940b78e598101ec8bef58871f4b929e20821e3a64ec">
   <div class="mc-foot"><b>offline_gross/share</b>=$-0.515 · shares=5.0 · (only offline entered)</div>
 </div>
-<div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
+<div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-12</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=60s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2111,7 +2112,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2125,7 +2126,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=60s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2167,7 +2168,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-13" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-10</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -2237,7 +2238,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="pnlcumsum" data-date="2026-05-13" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">pnlcumsum</span>
     <span class="mc-bucket">only online</span>
@@ -2265,7 +2266,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="pnlcumsum" data-date="2026-05-13" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=20s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-13</span>
     <span class="mc-sig">pnlcumsum</span>
     <span class="mc-bucket">only online</span>
@@ -3777,7 +3778,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=20s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -3903,7 +3904,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-05</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-04</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -3917,7 +3918,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-04-30</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -4113,7 +4114,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=40s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -4211,7 +4212,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-05</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -4281,7 +4282,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-13</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -4393,7 +4394,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=60s</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only offline</span>
@@ -4432,10 +4433,10 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xf841f5351225a105d1fc3d5695327c600f80eb75f403e84049ec8c9770.png" alt="0xf841f5351225a105d1fc3d5695327c600f80eb75f403e84049ec8c977091df43">
   <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
 </div>
-<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-14" data-bucket="online_only" data-mismatch="others" data-result="lose">
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-14" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-others">others</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">pnlcumsum</span>
     <span class="mc-bucket">only online</span>
@@ -4502,10 +4503,24 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x26b2e7034235a635ec26238b9469afadce225c1500515de870d61505e3.png" alt="0x26b2e7034235a635ec26238b9469afadce225c1500515de870d61505e300a4e8">
   <div class="mc-foot"><b>real_pnl/share</b>=$-0.720 · shares=100.0 · (only online entered)</div>
 </div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 5:55PM-6:00PM ET</div>
+    <div class="mc-cid"><code>0x333b6bdbf71eb734efa0482eec73929c1785b8319fa95b63e819e53e62db48ce</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x333b6bdbf71eb734efa0482eec73929c1785b8319fa95b63e819e53e62.png" alt="0x333b6bdbf71eb734efa0482eec73929c1785b8319fa95b63e819e53e62db48ce">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.010 · shares=100.0 · (only online entered)</div>
+</div>
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -4515,6 +4530,20 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   </div>
   <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x4649fc16979e8de45e23bd09ff805326b3da1fe5a929b1c7726204da3a.png" alt="0x4649fc16979e8de45e23bd09ff805326b3da1fe5a929b1c7726204da3ab10612">
   <div class="mc-foot"><b>real_pnl/share</b>=$+0.300 · shares=5.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-13</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 7:20PM-7:25PM ET</div>
+    <div class="mc-cid"><code>0x48f423e78e525b475ddd280d4e067dab9a91b70f385621a5e970ff1dc99879a0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x48f423e78e525b475ddd280d4e067dab9a91b70f385621a5e970ff1dc9.png" alt="0x48f423e78e525b475ddd280d4e067dab9a91b70f385621a5e970ff1dc99879a0">
+  <div class="mc-foot"><b>real_pnl/share</b>=$-0.980 · shares=100.0 · (only online entered)</div>
 </div>
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="lose">
   <div class="mc-head">
@@ -4533,7 +4562,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-06</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -4558,10 +4587,52 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x74f25c55a8ba276f4296ceb8d7e29240cf385c667c37d9d91acba1f292.png" alt="0x74f25c55a8ba276f4296ceb8d7e29240cf385c667c37d9d91acba1f292e9e386">
   <div class="mc-foot"><b>real_pnl/share</b>=$+0.020 · shares=100.0 · (only online entered)</div>
 </div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 6:55PM-7:00PM ET</div>
+    <div class="mc-cid"><code>0x7b31af396df97fc12183c4dc3d570292b26ef0e4c68652e320d29516582ae905</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x7b31af396df97fc12183c4dc3d570292b26ef0e4c68652e320d2951658.png" alt="0x7b31af396df97fc12183c4dc3d570292b26ef0e4c68652e320d29516582ae905">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.110 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 4:50PM-4:55PM ET</div>
+    <div class="mc-cid"><code>0x8c5a67ca568c7b08bd1d171313413e4ddd190b5eec2e7816f55d97373a69d3be</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x8c5a67ca568c7b08bd1d171313413e4ddd190b5eec2e7816f55d97373a.png" alt="0x8c5a67ca568c7b08bd1d171313413e4ddd190b5eec2e7816f55d97373a69d3be">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.010 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 4:45PM-4:50PM ET</div>
+    <div class="mc-cid"><code>0x8cb54dc4fce94628b698872fd321d6b0876e1d461771cf32b3441b6a813dca4f</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x8cb54dc4fce94628b698872fd321d6b0876e1d461771cf32b3441b6a81.png" alt="0x8cb54dc4fce94628b698872fd321d6b0876e1d461771cf32b3441b6a813dca4f">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.010 · shares=100.0 · (only online entered)</div>
+</div>
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="lose">
   <div class="mc-head">
     <span class="mc-result mc-lose">LOSE</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-13</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -4572,10 +4643,24 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xa933217a3a9cd76ead590389727e8916bad73cd60237f592adc2ae9fb1.png" alt="0xa933217a3a9cd76ead590389727e8916bad73cd60237f592adc2ae9fb1f01b0c">
   <div class="mc-foot"><b>real_pnl/share</b>=$-0.287 · shares=100.0 · (only online entered)</div>
 </div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 6:25PM-6:30PM ET</div>
+    <div class="mc-cid"><code>0xac40335446258e4bbb1bd31e1f7da9d20673fad9b96a9d0b5c05a7a54e1511b2</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xac40335446258e4bbb1bd31e1f7da9d20673fad9b96a9d0b5c05a7a54e.png" alt="0xac40335446258e4bbb1bd31e1f7da9d20673fad9b96a9d0b5c05a7a54e1511b2">
+  <div class="mc-foot"><b>real_pnl/share</b>=$-0.547 · shares=100.0 · (only online entered)</div>
+</div>
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-13</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-15</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -4589,7 +4674,7 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
 <div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
   <div class="mc-head">
     <span class="mc-result mc-win">WIN</span>
-    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
     <span class="mc-day">2026-05-14</span>
     <span class="mc-sig">tte1min</span>
     <span class="mc-bucket">only online</span>
@@ -4599,6 +4684,48 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   </div>
   <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xe1f8c298bfe9cff9ce0082c271cd9ffd8d8d1867bfb010ff8e3c674e81.png" alt="0xe1f8c298bfe9cff9ce0082c271cd9ffd8d8d1867bfb010ff8e3c674e811bb2f8">
   <div class="mc-foot"><b>real_pnl/share</b>=$+0.047 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 7:40PM-7:45PM ET</div>
+    <div class="mc-cid"><code>0xe23d165feb6b027420d014dfafaf1af3a702bdd66aeab67c4af2dac997593bf9</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xe23d165feb6b027420d014dfafaf1af3a702bdd66aeab67c4af2dac997.png" alt="0xe23d165feb6b027420d014dfafaf1af3a702bdd66aeab67c4af2dac997593bf9">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.020 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 6:50PM-6:55PM ET</div>
+    <div class="mc-cid"><code>0xec16c35a3c27214b91be6c527445327947cccfb4d35ff47de7582987321ac26c</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xec16c35a3c27214b91be6c527445327947cccfb4d35ff47de758298732.png" alt="0xec16c35a3c27214b91be6c527445327947cccfb4d35ff47de7582987321ac26c">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.040 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-14" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-14</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 6:30PM-6:35PM ET</div>
+    <div class="mc-cid"><code>0xf7c1c1eb1ab0510096d00b57106d8da089252db4f582620a7bcfa42c90d9c1de</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xf7c1c1eb1ab0510096d00b57106d8da089252db4f582620a7bcfa42c90.png" alt="0xf7c1c1eb1ab0510096d00b57106d8da089252db4f582620a7bcfa42c90d9c1de">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.006 · shares=100.0 · (only online entered)</div>
 </div>
 <div class="market-card" data-signal="pnlcumsum" data-date="2026-05-14" data-bucket="shared" data-mismatch="shared" data-result="lose">
   <div class="mc-head">
@@ -5369,6 +5496,1742 @@ mean 值和样本数 n。每个子图标题写出该 shares 区间的 actual gap
   </div>
   <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xff6775ff174f0289c52e586a235484b5c40015a2a9b6050aecacb27086.png" alt="0xff6775ff174f0289c52e586a235484b5c40015a2a9b6050aecacb27086600313">
   <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:00AM-12:05AM ET</div>
+    <div class="mc-cid"><code>0x1bfc89d3a6fb19834094e08de8215c3decc40d9cd335d49a1f58d3eea1dbd760</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/pnlcumsum__0x1bfc89d3a6fb19834094e08de8215c3decc40d9cd335d49a1f58d3eea1.png" alt="0x1bfc89d3a6fb19834094e08de8215c3decc40d9cd335d49a1f58d3eea1dbd760">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=60s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:20AM-3:25AM ET</div>
+    <div class="mc-cid"><code>0x4617db99c2c131326f95118d8753cbc72bd2e8342828969a77a46e614ead606b</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/pnlcumsum__0x4617db99c2c131326f95118d8753cbc72bd2e8342828969a77a46e614e.png" alt="0x4617db99c2c131326f95118d8753cbc72bd2e8342828969a77a46e614ead606b">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.001 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:35PM-9:40PM ET</div>
+    <div class="mc-cid"><code>0x0249419191be943e4a4e15214b5d42d334a706fadafa38a9723747609c6be6fc</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x0249419191be943e4a4e15214b5d42d334a706fadafa38a9723747609c.png" alt="0x0249419191be943e4a4e15214b5d42d334a706fadafa38a9723747609c6be6fc">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:05AM-6:10AM ET</div>
+    <div class="mc-cid"><code>0x03dab4a6c0c86226625874156e67793e288f4b296f778b93e09841de9eadd9da</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x03dab4a6c0c86226625874156e67793e288f4b296f778b93e09841de9e.png" alt="0x03dab4a6c0c86226625874156e67793e288f4b296f778b93e09841de9eadd9da">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:25AM-9:30AM ET</div>
+    <div class="mc-cid"><code>0x07a8d309edd4c72fa4e1ed6c1eec09670fbffd6ca7134aabdec067b8f3562676</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x07a8d309edd4c72fa4e1ed6c1eec09670fbffd6ca7134aabdec067b8f3.png" alt="0x07a8d309edd4c72fa4e1ed6c1eec09670fbffd6ca7134aabdec067b8f3562676">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:35AM-9:40AM ET</div>
+    <div class="mc-cid"><code>0x0e41488dada6abe3025a222d4b615d49bbed3b1dc2baf85ea5db1a82575ccf0a</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x0e41488dada6abe3025a222d4b615d49bbed3b1dc2baf85ea5db1a8257.png" alt="0x0e41488dada6abe3025a222d4b615d49bbed3b1dc2baf85ea5db1a82575ccf0a">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=50s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:55PM-10:00PM ET</div>
+    <div class="mc-cid"><code>0x0f5cc9de22008ca02b0ab2c80772636097decd0c22671273b9a4444226be6f2a</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x0f5cc9de22008ca02b0ab2c80772636097decd0c22671273b9a4444226.png" alt="0x0f5cc9de22008ca02b0ab2c80772636097decd0c22671273b9a4444226be6f2a">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-04-26</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:30PM-11:35PM ET</div>
+    <div class="mc-cid"><code>0x1279f24857bff612b63bb9ea7f233175e0c6d04f5cc52880da796ed7fa9a2694</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x1279f24857bff612b63bb9ea7f233175e0c6d04f5cc52880da796ed7fa.png" alt="0x1279f24857bff612b63bb9ea7f233175e0c6d04f5cc52880da796ed7fa9a2694">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:00AM-12:05AM ET</div>
+    <div class="mc-cid"><code>0x1bfc89d3a6fb19834094e08de8215c3decc40d9cd335d49a1f58d3eea1dbd760</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x1bfc89d3a6fb19834094e08de8215c3decc40d9cd335d49a1f58d3eea1.png" alt="0x1bfc89d3a6fb19834094e08de8215c3decc40d9cd335d49a1f58d3eea1dbd760">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-12</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:05PM-9:10PM ET</div>
+    <div class="mc-cid"><code>0x204166fc070f5c6aad25caa596dd9b2df4fd96bee3c5f4089bb15d3c3cbb855a</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x204166fc070f5c6aad25caa596dd9b2df4fd96bee3c5f4089bb15d3c3c.png" alt="0x204166fc070f5c6aad25caa596dd9b2df4fd96bee3c5f4089bb15d3c3cbb855a">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=40s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:00PM-11:05PM ET</div>
+    <div class="mc-cid"><code>0x3de51c24cd6c8385eb3295693d53c0e884bf5336083fd0679a6b92af44b9a292</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x3de51c24cd6c8385eb3295693d53c0e884bf5336083fd0679a6b92af44.png" alt="0x3de51c24cd6c8385eb3295693d53c0e884bf5336083fd0679a6b92af44b9a292">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.095 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:55AM-6:00AM ET</div>
+    <div class="mc-cid"><code>0x421a8075d7f3290ee04d419d14b87d801d2f3089465e513967e6b477c1cd7a2c</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x421a8075d7f3290ee04d419d14b87d801d2f3089465e513967e6b477c1.png" alt="0x421a8075d7f3290ee04d419d14b87d801d2f3089465e513967e6b477c1cd7a2c">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 10:35PM-10:40PM ET</div>
+    <div class="mc-cid"><code>0x4553883eaa37e492e4798a9a83a428b5bbe0a30809901ada7e5dba49ad3f23ed</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x4553883eaa37e492e4798a9a83a428b5bbe0a30809901ada7e5dba49ad.png" alt="0x4553883eaa37e492e4798a9a83a428b5bbe0a30809901ada7e5dba49ad3f23ed">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:20AM-3:25AM ET</div>
+    <div class="mc-cid"><code>0x4617db99c2c131326f95118d8753cbc72bd2e8342828969a77a46e614ead606b</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x4617db99c2c131326f95118d8753cbc72bd2e8342828969a77a46e614e.png" alt="0x4617db99c2c131326f95118d8753cbc72bd2e8342828969a77a46e614ead606b">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.001 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:10AM-8:15AM ET</div>
+    <div class="mc-cid"><code>0x469e896bb82dc2a7f59ccaa66aa24254ef6bdfe3953b0b654cb07fcc12f61bd7</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x469e896bb82dc2a7f59ccaa66aa24254ef6bdfe3953b0b654cb07fcc12.png" alt="0x469e896bb82dc2a7f59ccaa66aa24254ef6bdfe3953b0b654cb07fcc12f61bd7">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:05PM-11:10PM ET</div>
+    <div class="mc-cid"><code>0x5b49ab7bda2d983ead7dab68e05dfa0a9b094823db544c703c65dbb7d6a1f0d0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x5b49ab7bda2d983ead7dab68e05dfa0a9b094823db544c703c65dbb7d6.png" alt="0x5b49ab7bda2d983ead7dab68e05dfa0a9b094823db544c703c65dbb7d6a1f0d0">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.065 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:10AM-3:15AM ET</div>
+    <div class="mc-cid"><code>0x619569b89de2219e3e860a9f944aec42a970a758c14d69b6aa155d9ff5ec0618</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x619569b89de2219e3e860a9f944aec42a970a758c14d69b6aa155d9ff5.png" alt="0x619569b89de2219e3e860a9f944aec42a970a758c14d69b6aa155d9ff5ec0618">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:25PM-9:30PM ET</div>
+    <div class="mc-cid"><code>0x644481ddf1ef8bc9a540d3b7a77d7879eebfae26fe652bcdcb9396bdeda902b2</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x644481ddf1ef8bc9a540d3b7a77d7879eebfae26fe652bcdcb9396bded.png" alt="0x644481ddf1ef8bc9a540d3b7a77d7879eebfae26fe652bcdcb9396bdeda902b2">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:35AM-5:40AM ET</div>
+    <div class="mc-cid"><code>0x69a3eb1a02a57b05a6c5182b55b70110fbeffcf8e3787019a2828e5fe99e4173</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x69a3eb1a02a57b05a6c5182b55b70110fbeffcf8e3787019a2828e5fe9.png" alt="0x69a3eb1a02a57b05a6c5182b55b70110fbeffcf8e3787019a2828e5fe99e4173">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 10:25AM-10:30AM ET</div>
+    <div class="mc-cid"><code>0x6aba0957db8132cff7e89a9f83e12af50d6930ae5039ea7bfaea79463fcce694</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x6aba0957db8132cff7e89a9f83e12af50d6930ae5039ea7bfaea79463f.png" alt="0x6aba0957db8132cff7e89a9f83e12af50d6930ae5039ea7bfaea79463fcce694">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.195 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=20s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:45AM-8:50AM ET</div>
+    <div class="mc-cid"><code>0x6c544549d68d15d079965b46cfc289872d44fab051b8f74971e6a14b5d733495</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x6c544549d68d15d079965b46cfc289872d44fab051b8f74971e6a14b5d.png" alt="0x6c544549d68d15d079965b46cfc289872d44fab051b8f74971e6a14b5d733495">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.615 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="others" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-others">others</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 10:50PM-10:55PM ET</div>
+    <div class="mc-cid"><code>0x9ecaa735965f97785e23877b60192bf012f0cd87dba77511358ced53e17a59e7</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0x9ecaa735965f97785e23877b60192bf012f0cd87dba77511358ced53e1.png" alt="0x9ecaa735965f97785e23877b60192bf012f0cd87dba77511358ced53e17a59e7">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=20s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:40AM-8:45AM ET</div>
+    <div class="mc-cid"><code>0xa879e2675476912cd4576d1cac59c475f2c8bb58662129627c76f733a731cc59</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xa879e2675476912cd4576d1cac59c475f2c8bb58662129627c76f733a7.png" alt="0xa879e2675476912cd4576d1cac59c475f2c8bb58662129627c76f733a731cc59">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.235 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="user_tag_diff" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-14</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:10AM-5:15AM ET</div>
+    <div class="mc-cid"><code>0xac53cc4d865bcf5b0fed836870c200642ca39c19c0c2a70b63c480da1a5ba837</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xac53cc4d865bcf5b0fed836870c200642ca39c19c0c2a70b63c480da1a.png" alt="0xac53cc4d865bcf5b0fed836870c200642ca39c19c0c2a70b63c480da1a5ba837">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.335 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:00AM-4:05AM ET</div>
+    <div class="mc-cid"><code>0xae71069ae8920fabe5fc699484113bbbed610ea44f72a067a1fe73c7702b6433</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xae71069ae8920fabe5fc699484113bbbed610ea44f72a067a1fe73c770.png" alt="0xae71069ae8920fabe5fc699484113bbbed610ea44f72a067a1fe73c7702b6433">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.045 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:55AM-2:00AM ET</div>
+    <div class="mc-cid"><code>0xbeb6250cda8f2b9829f25487245dff66df88aa9709b4eeb30c22bd6ff77e1614</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xbeb6250cda8f2b9829f25487245dff66df88aa9709b4eeb30c22bd6ff7.png" alt="0xbeb6250cda8f2b9829f25487245dff66df88aa9709b4eeb30c22bd6ff77e1614">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:05AM-1:10AM ET</div>
+    <div class="mc-cid"><code>0xc65014a0727f94fd2b98b25147903fa5744f2c69493962deed638d01f6a206f3</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xc65014a0727f94fd2b98b25147903fa5744f2c69493962deed638d01f6.png" alt="0xc65014a0727f94fd2b98b25147903fa5744f2c69493962deed638d01f6a206f3">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:15AM-6:20AM ET</div>
+    <div class="mc-cid"><code>0xc72393e79138dbd0a0416242ec0cbd397708f023815c972de41fb6ab61f2fcc9</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xc72393e79138dbd0a0416242ec0cbd397708f023815c972de41fb6ab61.png" alt="0xc72393e79138dbd0a0416242ec0cbd397708f023815c972de41fb6ab61f2fcc9">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:00AM-9:05AM ET</div>
+    <div class="mc-cid"><code>0xe04bed02b6c48d2b50053232ba0bbfbe3c0b969aeeb6a20eddc86b9100117ecb</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xe04bed02b6c48d2b50053232ba0bbfbe3c0b969aeeb6a20eddc86b9100.png" alt="0xe04bed02b6c48d2b50053232ba0bbfbe3c0b969aeeb6a20eddc86b9100117ecb">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=50s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:25AM-4:30AM ET</div>
+    <div class="mc-cid"><code>0xf7ead5579f162089eb3dbc5f96eaa453aede7ab24f0b581c3b044bf27e51e6aa</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xf7ead5579f162089eb3dbc5f96eaa453aede7ab24f0b581c3b044bf27e.png" alt="0xf7ead5579f162089eb3dbc5f96eaa453aede7ab24f0b581c3b044bf27e51e6aa">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:55AM-10:00AM ET</div>
+    <div class="mc-cid"><code>0xf82db772ef180a22e20631df19135863b8ae710d8807b05ba3c54d6b613e675c</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xf82db772ef180a22e20631df19135863b8ae710d8807b05ba3c54d6b61.png" alt="0xf82db772ef180a22e20631df19135863b8ae710d8807b05ba3c54d6b613e675c">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:35AM-1:40AM ET</div>
+    <div class="mc-cid"><code>0xfa1a25ec4510c3a4bbd7d70018bb7d613fd3e661253b06b405f4da75145aa234</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xfa1a25ec4510c3a4bbd7d70018bb7d613fd3e661253b06b405f4da7514.png" alt="0xfa1a25ec4510c3a4bbd7d70018bb7d613fd3e661253b06b405f4da75145aa234">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:45AM-6:50AM ET</div>
+    <div class="mc-cid"><code>0xfc0100997b459c50710a78d739cf46a668bdd945bf8f096a875566e49cb0fcfd</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xfc0100997b459c50710a78d739cf46a668bdd945bf8f096a875566e49c.png" alt="0xfc0100997b459c50710a78d739cf46a668bdd945bf8f096a875566e49cb0fcfd">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="offline_only" data-mismatch="enter_failure" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-enter_failure">enter failure</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only offline</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:30AM-1:35AM ET</div>
+    <div class="mc-cid"><code>0xfe160a6476b864a74503ed7aff84fb204b880ce9724ecf6543546976369783b6</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/offline_only/tte1min__0xfe160a6476b864a74503ed7aff84fb204b880ce9724ecf654354697636.png" alt="0xfe160a6476b864a74503ed7aff84fb204b880ce9724ecf6543546976369783b6">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · shares=100.0 · (only offline entered)</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=30s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:10AM-5:15AM ET</div>
+    <div class="mc-cid"><code>0xac53cc4d865bcf5b0fed836870c200642ca39c19c0c2a70b63c480da1a5ba837</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/pnlcumsum__0xac53cc4d865bcf5b0fed836870c200642ca39c19c0c2a70b63c480da1a.png" alt="0xac53cc4d865bcf5b0fed836870c200642ca39c19c0c2a70b63c480da1a5ba837">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.420 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 8:50PM-8:55PM ET</div>
+    <div class="mc-cid"><code>0x02b09dcff272a9f092a3d757d4ffdd83198f5b93941b3ef45ead3eb3a581223b</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x02b09dcff272a9f092a3d757d4ffdd83198f5b93941b3ef45ead3eb3a5.png" alt="0x02b09dcff272a9f092a3d757d4ffdd83198f5b93941b3ef45ead3eb3a581223b">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.004 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:25AM-12:30AM ET</div>
+    <div class="mc-cid"><code>0x4044e4f34f509e4007c4dee9968dadcdd146becfc9de9fa9a4473443adf614eb</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x4044e4f34f509e4007c4dee9968dadcdd146becfc9de9fa9a4473443ad.png" alt="0x4044e4f34f509e4007c4dee9968dadcdd146becfc9de9fa9a4473443adf614eb">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.190 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 8:40PM-8:45PM ET</div>
+    <div class="mc-cid"><code>0x52838ab51fb59fc3809c80e43a1cd6064a0e3c3244fd95b4e25832b6ef85bc5c</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0x52838ab51fb59fc3809c80e43a1cd6064a0e3c3244fd95b4e25832b6ef.png" alt="0x52838ab51fb59fc3809c80e43a1cd6064a0e3c3244fd95b4e25832b6ef85bc5c">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.001 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:15AM-12:20AM ET</div>
+    <div class="mc-cid"><code>0xaa4b695a8700c20795b801d0bf80182edf3b6308acf126cece496bfd7c8664f0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xaa4b695a8700c20795b801d0bf80182edf3b6308acf126cece496bfd7c.png" alt="0xaa4b695a8700c20795b801d0bf80182edf3b6308acf126cece496bfd7c8664f0">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.030 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=40s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 2:45AM-2:50AM ET</div>
+    <div class="mc-cid"><code>0xb544c253cb64a3de8fef5c898211ec1df3251c657c8d77934e01ede83db342ec</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xb544c253cb64a3de8fef5c898211ec1df3251c657c8d77934e01ede83d.png" alt="0xb544c253cb64a3de8fef5c898211ec1df3251c657c8d77934e01ede83db342ec">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.075 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:45AM-1:50AM ET</div>
+    <div class="mc-cid"><code>0xdc74763da261a1307e4b92d0d3acda1f854b8c12924029d32efd72a684840df5</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xdc74763da261a1307e4b92d0d3acda1f854b8c12924029d32efd72a684.png" alt="0xdc74763da261a1307e4b92d0d3acda1f854b8c12924029d32efd72a684840df5">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.060 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:00PM-9:05PM ET</div>
+    <div class="mc-cid"><code>0xe5fdd1a76685973001492cff379dc2d505043f4dd97a68d6ff95f31003fbb685</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xe5fdd1a76685973001492cff379dc2d505043f4dd97a68d6ff95f31003.png" alt="0xe5fdd1a76685973001492cff379dc2d505043f4dd97a68d6ff95f31003fbb685">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.010 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="user_tag_diff" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-user_tag_diff">user_tag diff · tag=2026-05-16</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:05AM-3:10AM ET</div>
+    <div class="mc-cid"><code>0xed01585da3a55552af83b838394b67133284822140c40222967afeed7ee5fec5</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xed01585da3a55552af83b838394b67133284822140c40222967afeed7e.png" alt="0xed01585da3a55552af83b838394b67133284822140c40222967afeed7ee5fec5">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.720 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="online_only" data-mismatch="data_missing" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-data_missing">data missing · lag=10s</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">only online</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 8:00PM-8:05PM ET</div>
+    <div class="mc-cid"><code>0xfe36ab16a195ef7eb0b06c15bf554d2f7707ef167ba256088e4602c07f37a6bf</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/online_only/tte1min__0xfe36ab16a195ef7eb0b06c15bf554d2f7707ef167ba256088e4602c07f.png" alt="0xfe36ab16a195ef7eb0b06c15bf554d2f7707ef167ba256088e4602c07f37a6bf">
+  <div class="mc-foot"><b>real_pnl/share</b>=$+0.040 · shares=100.0 · (only online entered)</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:45AM-8:50AM ET</div>
+    <div class="mc-cid"><code>0x6c544549d68d15d079965b46cfc289872d44fab051b8f74971e6a14b5d733495</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0x6c544549d68d15d079965b46cfc289872d44fab051b8f74971e6a14b5d.png" alt="0x6c544549d68d15d079965b46cfc289872d44fab051b8f74971e6a14b5d733495">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.270 · <b>real_pnl/share</b>=$+0.420 · delay=$-0.130 · exec=$-0.020 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:05PM-9:10PM ET</div>
+    <div class="mc-cid"><code>0x204166fc070f5c6aad25caa596dd9b2df4fd96bee3c5f4089bb15d3c3cbb855a</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0x204166fc070f5c6aad25caa596dd9b2df4fd96bee3c5f4089bb15d3c3c.png" alt="0x204166fc070f5c6aad25caa596dd9b2df4fd96bee3c5f4089bb15d3c3cbb855a">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.165 · <b>real_pnl/share</b>=$+0.040 · delay=$+0.005 · exec=$+0.120 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:50AM-8:55AM ET</div>
+    <div class="mc-cid"><code>0xa6fcfac6697c97d67d55b6738c086181bc728b60fe7989f0d1b67d8fe8d489a8</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0xa6fcfac6697c97d67d55b6738c086181bc728b60fe7989f0d1b67d8fe8.png" alt="0xa6fcfac6697c97d67d55b6738c086181bc728b60fe7989f0d1b67d8fe8d489a8">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.455 · <b>real_pnl/share</b>=$+0.333 · delay=$+0.000 · exec=$+0.122 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:00AM-7:05AM ET</div>
+    <div class="mc-cid"><code>0xaf01bf5c2bd999f9a9137d96f9c97c1abf62dde5b98c5fae6a6c3efc5419b5c4</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0xaf01bf5c2bd999f9a9137d96f9c97c1abf62dde5b98c5fae6a6c3efc54.png" alt="0xaf01bf5c2bd999f9a9137d96f9c97c1abf62dde5b98c5fae6a6c3efc5419b5c4">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.115 · <b>real_pnl/share</b>=$-0.164 · delay=$+0.000 · exec=$+0.040 · resid=$+0.009</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:40AM-8:45AM ET</div>
+    <div class="mc-cid"><code>0xa879e2675476912cd4576d1cac59c475f2c8bb58662129627c76f733a731cc59</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0xa879e2675476912cd4576d1cac59c475f2c8bb58662129627c76f733a7.png" alt="0xa879e2675476912cd4576d1cac59c475f2c8bb58662129627c76f733a731cc59">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.325 · <b>real_pnl/share</b>=$+0.360 · delay=$-0.030 · exec=$-0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:15PM-9:20PM ET</div>
+    <div class="mc-cid"><code>0x6beccc2e92ed7db1271b2d7d25529cb70494534aede134ce78a471c916e9e38d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0x6beccc2e92ed7db1271b2d7d25529cb70494534aede134ce78a471c916.png" alt="0x6beccc2e92ed7db1271b2d7d25529cb70494534aede134ce78a471c916e9e38d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.475 · <b>real_pnl/share</b>=$-0.500 · delay=$+0.030 · exec=$-0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:05PM-11:10PM ET</div>
+    <div class="mc-cid"><code>0x5b49ab7bda2d983ead7dab68e05dfa0a9b094823db544c703c65dbb7d6a1f0d0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0x5b49ab7bda2d983ead7dab68e05dfa0a9b094823db544c703c65dbb7d6.png" alt="0x5b49ab7bda2d983ead7dab68e05dfa0a9b094823db544c703c65dbb7d6a1f0d0">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.035 · <b>real_pnl/share</b>=$-0.020 · delay=$+0.000 · exec=$-0.015 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:00AM-4:05AM ET</div>
+    <div class="mc-cid"><code>0xae71069ae8920fabe5fc699484113bbbed610ea44f72a067a1fe73c7702b6433</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0xae71069ae8920fabe5fc699484113bbbed610ea44f72a067a1fe73c770.png" alt="0xae71069ae8920fabe5fc699484113bbbed610ea44f72a067a1fe73c7702b6433">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.425 · <b>real_pnl/share</b>=$+0.420 · delay=$+0.060 · exec=$-0.055 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:25AM-4:30AM ET</div>
+    <div class="mc-cid"><code>0xf7ead5579f162089eb3dbc5f96eaa453aede7ab24f0b581c3b044bf27e51e6aa</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0xf7ead5579f162089eb3dbc5f96eaa453aede7ab24f0b581c3b044bf27e.png" alt="0xf7ead5579f162089eb3dbc5f96eaa453aede7ab24f0b581c3b044bf27e51e6aa">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.475 · <b>real_pnl/share</b>=$-0.480 · delay=$+0.010 · exec=$-0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="pnlcumsum" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">pnlcumsum</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:30AM-7:35AM ET</div>
+    <div class="mc-cid"><code>0x1c7f12126c84777b4dbf33fe7152c6dc4d0b5af10e6e56f8b20ab652895179f2</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/pnlcumsum__0x1c7f12126c84777b4dbf33fe7152c6dc4d0b5af10e6e56f8b20ab65289.png" alt="0x1c7f12126c84777b4dbf33fe7152c6dc4d0b5af10e6e56f8b20ab652895179f2">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.415 · <b>real_pnl/share</b>=$+0.420 · delay=$+0.000 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:35PM-11:40PM ET</div>
+    <div class="mc-cid"><code>0x7c7c3e12cc41019f6de52fbd56b8608190c7a910e8741478b8a8e6f744a55d75</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x7c7c3e12cc41019f6de52fbd56b8608190c7a910e8741478b8a8e6f744.png" alt="0x7c7c3e12cc41019f6de52fbd56b8608190c7a910e8741478b8a8e6f744a55d75">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.945 · <b>real_pnl/share</b>=$+0.614 · delay=$+0.000 · exec=$+0.315 · resid=$+0.016</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:45AM-3:50AM ET</div>
+    <div class="mc-cid"><code>0x7bfef6b2a65cbff9b9b46cdc61873cf64aafbf58e3e8938356ded52556547012</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x7bfef6b2a65cbff9b9b46cdc61873cf64aafbf58e3e8938356ded52556.png" alt="0x7bfef6b2a65cbff9b9b46cdc61873cf64aafbf58e3e8938356ded52556547012">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.615 · <b>real_pnl/share</b>=$+0.292 · delay=$+0.020 · exec=$+0.288 · resid=$+0.015</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:30AM-4:35AM ET</div>
+    <div class="mc-cid"><code>0xaf8d263f171d89a9dd3e6b42349dc0584fbdf3743b19cbfb2e7f9cd9497c4fa1</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xaf8d263f171d89a9dd3e6b42349dc0584fbdf3743b19cbfb2e7f9cd949.png" alt="0xaf8d263f171d89a9dd3e6b42349dc0584fbdf3743b19cbfb2e7f9cd9497c4fa1">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.505 · <b>real_pnl/share</b>=$-0.232 · delay=$-0.140 · exec=$-0.145 · resid=$+0.012</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 10:45PM-10:50PM ET</div>
+    <div class="mc-cid"><code>0x7536b654c5a4e4208aeceb6a59f5db62f96c92f876851e34e725d3ccf7466e05</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x7536b654c5a4e4208aeceb6a59f5db62f96c92f876851e34e725d3ccf7.png" alt="0x7536b654c5a4e4208aeceb6a59f5db62f96c92f876851e34e725d3ccf7466e05">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.295 · <b>real_pnl/share</b>=$+0.065 · delay=$+0.000 · exec=$+0.225 · resid=$+0.005</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:55AM-5:00AM ET</div>
+    <div class="mc-cid"><code>0x5f5cbdb870d9972d78712b53c0a83ed40dc0959e20c26f8e820dfcf433283413</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x5f5cbdb870d9972d78712b53c0a83ed40dc0959e20c26f8e820dfcf433.png" alt="0x5f5cbdb870d9972d78712b53c0a83ed40dc0959e20c26f8e820dfcf433283413">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.155 · <b>real_pnl/share</b>=$+0.298 · delay=$+0.000 · exec=$-0.158 · resid=$+0.015</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:35AM-4:40AM ET</div>
+    <div class="mc-cid"><code>0x8ccab0a6332089157786e9ee2b7769c3d5fbd86cba323b2ae3ccd2cc572c365f</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x8ccab0a6332089157786e9ee2b7769c3d5fbd86cba323b2ae3ccd2cc57.png" alt="0x8ccab0a6332089157786e9ee2b7769c3d5fbd86cba323b2ae3ccd2cc572c365f">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.175 · <b>real_pnl/share</b>=$+0.060 · delay=$+0.080 · exec=$+0.035 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:55AM-9:00AM ET</div>
+    <div class="mc-cid"><code>0x7ec9bf26d3a6626af2517bff98589be544e3781f0868b5e29a30c33fc0bfecf2</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x7ec9bf26d3a6626af2517bff98589be544e3781f0868b5e29a30c33fc0.png" alt="0x7ec9bf26d3a6626af2517bff98589be544e3781f0868b5e29a30c33fc0bfecf2">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.155 · <b>real_pnl/share</b>=$+0.040 · delay=$+0.030 · exec=$+0.085 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:40AM-6:45AM ET</div>
+    <div class="mc-cid"><code>0xd245a86b27959b723d429cfad0b9cee0485d9fea6a8d85cc614a7c3ed0137c24</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xd245a86b27959b723d429cfad0b9cee0485d9fea6a8d85cc614a7c3ed0.png" alt="0xd245a86b27959b723d429cfad0b9cee0485d9fea6a8d85cc614a7c3ed0137c24">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.885 · <b>real_pnl/share</b>=$-0.978 · delay=$+0.000 · exec=$+0.093 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:35AM-7:40AM ET</div>
+    <div class="mc-cid"><code>0x7553d1d66776ea626ff8e66c2c455e9027609ba316aeaf91614341040e7a7e05</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x7553d1d66776ea626ff8e66c2c455e9027609ba316aeaf91614341040e.png" alt="0x7553d1d66776ea626ff8e66c2c455e9027609ba316aeaf91614341040e7a7e05">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.965 · <b>real_pnl/share</b>=$-0.890 · delay=$-0.070 · exec=$-0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:15AM-5:20AM ET</div>
+    <div class="mc-cid"><code>0xa0fb0d661e944b318af16a56ac4a4755f4bc167553943d0988e3900ec0bb7722</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xa0fb0d661e944b318af16a56ac4a4755f4bc167553943d0988e3900ec0.png" alt="0xa0fb0d661e944b318af16a56ac4a4755f4bc167553943d0988e3900ec0bb7722">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.155 · <b>real_pnl/share</b>=$+0.090 · delay=$+0.020 · exec=$+0.045 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:00AM-3:05AM ET</div>
+    <div class="mc-cid"><code>0x60f8ac6f96fb5d7d49d9a9a8d32d69bbc2c3937ec8efbab280389f3f0fb8be25</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x60f8ac6f96fb5d7d49d9a9a8d32d69bbc2c3937ec8efbab280389f3f0f.png" alt="0x60f8ac6f96fb5d7d49d9a9a8d32d69bbc2c3937ec8efbab280389f3f0fb8be25">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.115 · <b>real_pnl/share</b>=$+0.050 · delay=$+0.000 · exec=$+0.180 · resid=$-0.115</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:20AM-4:25AM ET</div>
+    <div class="mc-cid"><code>0x65e07532cf46aaaa92387cc3e8c46fd01655f4d79f1e009d1828d8bdfb18425e</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x65e07532cf46aaaa92387cc3e8c46fd01655f4d79f1e009d1828d8bdfb.png" alt="0x65e07532cf46aaaa92387cc3e8c46fd01655f4d79f1e009d1828d8bdfb18425e">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.285 · <b>real_pnl/share</b>=$+0.348 · delay=$-0.010 · exec=$-0.069 · resid=$+0.016</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:50AM-5:55AM ET</div>
+    <div class="mc-cid"><code>0x082f4fee7a0c4da442ded1582520dcf551972c34c8cc18c2f0d3bd960f52558d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x082f4fee7a0c4da442ded1582520dcf551972c34c8cc18c2f0d3bd960f.png" alt="0x082f4fee7a0c4da442ded1582520dcf551972c34c8cc18c2f0d3bd960f52558d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.075 · <b>real_pnl/share</b>=$+0.029 · delay=$+0.048 · exec=$-0.005 · resid=$+0.003</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:50AM-9:55AM ET</div>
+    <div class="mc-cid"><code>0xef26a2354f7de7b38930d0d1fccf31f56c036ad23f5611863b0ac43d3f1510aa</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xef26a2354f7de7b38930d0d1fccf31f56c036ad23f5611863b0ac43d3f.png" alt="0xef26a2354f7de7b38930d0d1fccf31f56c036ad23f5611863b0ac43d3f1510aa">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.045 · <b>real_pnl/share</b>=$+0.090 · delay=$-0.005 · exec=$-0.040 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:40AM-7:45AM ET</div>
+    <div class="mc-cid"><code>0x26c4d890a545292bed3130fb26f8fb812bbbac9ee1abe7c0e26310fa7846db87</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x26c4d890a545292bed3130fb26f8fb812bbbac9ee1abe7c0e26310fa78.png" alt="0x26c4d890a545292bed3130fb26f8fb812bbbac9ee1abe7c0e26310fa7846db87">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.095 · <b>real_pnl/share</b>=$+0.140 · delay=$+0.020 · exec=$-0.074 · resid=$+0.009</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:40AM-3:45AM ET</div>
+    <div class="mc-cid"><code>0x2ff87dde1f4618fb2aa68546f5945435325ba463e9ff06a92feaa8ca33804a05</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x2ff87dde1f4618fb2aa68546f5945435325ba463e9ff06a92feaa8ca33.png" alt="0x2ff87dde1f4618fb2aa68546f5945435325ba463e9ff06a92feaa8ca33804a05">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.066 · delay=$+0.010 · exec=$-0.055 · resid=$+0.005</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:00AM-6:05AM ET</div>
+    <div class="mc-cid"><code>0x506eb10b7fd77f21efc4fb6054ed6d49ab40489192cbbacbc303f2fd39b343d0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x506eb10b7fd77f21efc4fb6054ed6d49ab40489192cbbacbc303f2fd39.png" alt="0x506eb10b7fd77f21efc4fb6054ed6d49ab40489192cbbacbc303f2fd39b343d0">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.145 · <b>real_pnl/share</b>=$+0.110 · delay=$+0.020 · exec=$+0.015 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:20AM-12:25AM ET</div>
+    <div class="mc-cid"><code>0x9a291c78cc0a86c97bf2a7abdbb1b8f048873bc1fa0c4b198a6b6e18ca7a446d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x9a291c78cc0a86c97bf2a7abdbb1b8f048873bc1fa0c4b198a6b6e18ca.png" alt="0x9a291c78cc0a86c97bf2a7abdbb1b8f048873bc1fa0c4b198a6b6e18ca7a446d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.085 · <b>real_pnl/share</b>=$+0.120 · delay=$-0.030 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:25PM-11:30PM ET</div>
+    <div class="mc-cid"><code>0x0ea29bb54f9bb12062819e8d7c924d73be6547ac2e6502e62e61989f03625aeb</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x0ea29bb54f9bb12062819e8d7c924d73be6547ac2e6502e62e61989f03.png" alt="0x0ea29bb54f9bb12062819e8d7c924d73be6547ac2e6502e62e61989f03625aeb">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.825 · <b>real_pnl/share</b>=$-0.860 · delay=$+0.040 · exec=$-0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 2:55AM-3:00AM ET</div>
+    <div class="mc-cid"><code>0x70eb55b23f5649e61daa6aa1d07ea6b942b8ff0f0bbf03d9e490b1444ae40a7d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x70eb55b23f5649e61daa6aa1d07ea6b942b8ff0f0bbf03d9e490b1444a.png" alt="0x70eb55b23f5649e61daa6aa1d07ea6b942b8ff0f0bbf03d9e490b1444ae40a7d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.685 · <b>real_pnl/share</b>=$-0.716 · delay=$+0.070 · exec=$-0.046 · resid=$+0.007</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 10:10AM-10:15AM ET</div>
+    <div class="mc-cid"><code>0x5ecedf43ec056e6a5b5b95061fa310c1b55b3876c3ac432d8130696a7b8e2df4</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x5ecedf43ec056e6a5b5b95061fa310c1b55b3876c3ac432d8130696a7b.png" alt="0x5ecedf43ec056e6a5b5b95061fa310c1b55b3876c3ac432d8130696a7b8e2df4">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.050 · <b>real_pnl/share</b>=$+0.020 · delay=$-0.005 · exec=$+0.035 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:20AM-6:25AM ET</div>
+    <div class="mc-cid"><code>0x6e47a8108d08f8a5ac6a6ca839e8f7b9cdf19b4fdc87b3153ef57d4cf05a95c7</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x6e47a8108d08f8a5ac6a6ca839e8f7b9cdf19b4fdc87b3153ef57d4cf0.png" alt="0x6e47a8108d08f8a5ac6a6ca839e8f7b9cdf19b4fdc87b3153ef57d4cf05a95c7">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.035 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.025 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:40AM-12:45AM ET</div>
+    <div class="mc-cid"><code>0xf741c20194c4a0ad40716ff50745ca65a7e14c3c3e680c45943a0df21f2e7b87</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xf741c20194c4a0ad40716ff50745ca65a7e14c3c3e680c45943a0df21f.png" alt="0xf741c20194c4a0ad40716ff50745ca65a7e14c3c3e680c45943a0df21f2e7b87">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.545 · <b>real_pnl/share</b>=$+0.570 · delay=$-0.010 · exec=$-0.015 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:20AM-9:25AM ET</div>
+    <div class="mc-cid"><code>0x955e630e7e3ccfbc472f9ca9fae5477919819013cdce877a3fa5fccea34680d7</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x955e630e7e3ccfbc472f9ca9fae5477919819013cdce877a3fa5fccea3.png" alt="0x955e630e7e3ccfbc472f9ca9fae5477919819013cdce877a3fa5fccea34680d7">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.130 · <b>real_pnl/share</b>=$+0.154 · delay=$-0.005 · exec=$-0.028 · resid=$+0.010</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:25AM-6:30AM ET</div>
+    <div class="mc-cid"><code>0x37de5a5c4b59d8498c24354964cdea74e2dd0cbc20c51f8f430ef720d41c4813</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x37de5a5c4b59d8498c24354964cdea74e2dd0cbc20c51f8f430ef720d4.png" alt="0x37de5a5c4b59d8498c24354964cdea74e2dd0cbc20c51f8f430ef720d41c4813">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.035 · <b>real_pnl/share</b>=$+0.013 · delay=$+0.004 · exec=$-0.002 · resid=$+0.020</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 2:35AM-2:40AM ET</div>
+    <div class="mc-cid"><code>0x51e51ee5c6b1c8f78b39e50534fdfd811cf7602094cc04a0abd8e31807859627</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x51e51ee5c6b1c8f78b39e50534fdfd811cf7602094cc04a0abd8e31807.png" alt="0x51e51ee5c6b1c8f78b39e50534fdfd811cf7602094cc04a0abd8e31807859627">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.035 · <b>real_pnl/share</b>=$+0.056 · delay=$-0.010 · exec=$-0.015 · resid=$+0.004</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:15AM-9:20AM ET</div>
+    <div class="mc-cid"><code>0x84d1fe8d8cbb785df5fe9ef511e75ba026435ae6f9f87d3682057afc05ff786a</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x84d1fe8d8cbb785df5fe9ef511e75ba026435ae6f9f87d3682057afc05.png" alt="0x84d1fe8d8cbb785df5fe9ef511e75ba026435ae6f9f87d3682057afc05ff786a">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.460 · <b>real_pnl/share</b>=$-0.440 · delay=$-0.050 · exec=$+0.030 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:25AM-3:30AM ET</div>
+    <div class="mc-cid"><code>0xfe2e2ba7307606755609e76d72b608c83a2b6b901d445e468190744376ea9a86</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xfe2e2ba7307606755609e76d72b608c83a2b6b901d445e468190744376.png" alt="0xfe2e2ba7307606755609e76d72b608c83a2b6b901d445e468190744376ea9a86">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.185 · <b>real_pnl/share</b>=$+0.170 · delay=$+0.015 · exec=$-0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:10AM-7:15AM ET</div>
+    <div class="mc-cid"><code>0x527dceaeec6a46facbfceb291cd074680d0e0e2942f57dfcddc9e311e6e75ffd</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x527dceaeec6a46facbfceb291cd074680d0e0e2942f57dfcddc9e311e6.png" alt="0x527dceaeec6a46facbfceb291cd074680d0e0e2942f57dfcddc9e311e6e75ffd">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.035 · <b>real_pnl/share</b>=$+0.020 · delay=$+0.000 · exec=$+0.015 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:55AM-1:00AM ET</div>
+    <div class="mc-cid"><code>0xef3cba79a8c155136f1ab7063dc5e8cc77ee76ee396c310e4aa15687f69a04d6</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xef3cba79a8c155136f1ab7063dc5e8cc77ee76ee396c310e4aa15687f6.png" alt="0xef3cba79a8c155136f1ab7063dc5e8cc77ee76ee396c310e4aa15687f69a04d6">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.015 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:40AM-5:45AM ET</div>
+    <div class="mc-cid"><code>0xefb30c5cff4a1b34ccbdd9daf2106dab3fb82a2c39ba6a340441186976a59e1d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xefb30c5cff4a1b34ccbdd9daf2106dab3fb82a2c39ba6a340441186976.png" alt="0xefb30c5cff4a1b34ccbdd9daf2106dab3fb82a2c39ba6a340441186976a59e1d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.015 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:20PM-9:25PM ET</div>
+    <div class="mc-cid"><code>0x288ebc54bcf9de6f40b2efa915498e0c892f3ebcb88c02e3abed045b9816a83e</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x288ebc54bcf9de6f40b2efa915498e0c892f3ebcb88c02e3abed045b98.png" alt="0x288ebc54bcf9de6f40b2efa915498e0c892f3ebcb88c02e3abed045b9816a83e">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.030 · delay=$-0.010 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:15AM-3:20AM ET</div>
+    <div class="mc-cid"><code>0xd671d0139bc034881253c12381c3a2cf02f0eeb8159469ec20f37f237144da6a</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xd671d0139bc034881253c12381c3a2cf02f0eeb8159469ec20f37f2371.png" alt="0xd671d0139bc034881253c12381c3a2cf02f0eeb8159469ec20f37f237144da6a">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.415 · <b>real_pnl/share</b>=$-0.427 · delay=$+0.025 · exec=$-0.030 · resid=$+0.017</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 10:30PM-10:35PM ET</div>
+    <div class="mc-cid"><code>0x67e802f8ca57f08b0f53f23cb6e59338080b04c591ad6d3626cc5c65d02dcd44</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x67e802f8ca57f08b0f53f23cb6e59338080b04c591ad6d3626cc5c65d0.png" alt="0x67e802f8ca57f08b0f53f23cb6e59338080b04c591ad6d3626cc5c65d02dcd44">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.001 · delay=$+0.000 · exec=$+0.009 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:30PM-9:35PM ET</div>
+    <div class="mc-cid"><code>0x8cc6c8ddd8d765fd27db8ef5da84f00a3bb0f352735595640a59f47601136e94</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x8cc6c8ddd8d765fd27db8ef5da84f00a3bb0f352735595640a59f47601.png" alt="0x8cc6c8ddd8d765fd27db8ef5da84f00a3bb0f352735595640a59f47601136e94">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.001 · delay=$+0.000 · exec=$+0.009 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:50PM-9:55PM ET</div>
+    <div class="mc-cid"><code>0x8e60af6605bc03bb24200063dda4e9c3269a3335c1bd693ea9c6eec30a9ea435</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x8e60af6605bc03bb24200063dda4e9c3269a3335c1bd693ea9c6eec30a.png" alt="0x8e60af6605bc03bb24200063dda4e9c3269a3335c1bd693ea9c6eec30a9ea435">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.001 · delay=$+0.000 · exec=$+0.009 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:30AM-9:35AM ET</div>
+    <div class="mc-cid"><code>0xbd7cf88956399816995329fc545d435c61795ffed75c79f01ed2dd3c4e337c91</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xbd7cf88956399816995329fc545d435c61795ffed75c79f01ed2dd3c4e.png" alt="0xbd7cf88956399816995329fc545d435c61795ffed75c79f01ed2dd3c4e337c91">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.001 · delay=$+0.000 · exec=$+0.009 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:00AM-8:05AM ET</div>
+    <div class="mc-cid"><code>0x53847cd75b23ed4328fb5d53cbb90255ac504e84845ceef20b8565223195ce59</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x53847cd75b23ed4328fb5d53cbb90255ac504e84845ceef20b85652231.png" alt="0x53847cd75b23ed4328fb5d53cbb90255ac504e84845ceef20b8565223195ce59">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.002 · delay=$+0.000 · exec=$+0.008 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 10:00AM-10:05AM ET</div>
+    <div class="mc-cid"><code>0x39d01fc969f41cf109c650878f45ab644b7fa7cf30030298825dd124ca7165d3</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x39d01fc969f41cf109c650878f45ab644b7fa7cf30030298825dd124ca.png" alt="0x39d01fc969f41cf109c650878f45ab644b7fa7cf30030298825dd124ca7165d3">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.040 · <b>real_pnl/share</b>=$+0.033 · delay=$+0.015 · exec=$-0.009 · resid=$+0.001</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:30AM-3:35AM ET</div>
+    <div class="mc-cid"><code>0xb40a144effca0ae558f2afee7e4a0492efab7ae9b4ecb23559dbe1105323351b</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xb40a144effca0ae558f2afee7e4a0492efab7ae9b4ecb23559dbe11053.png" alt="0xb40a144effca0ae558f2afee7e4a0492efab7ae9b4ecb23559dbe1105323351b">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.019 · delay=$+0.010 · exec=$-0.005 · resid=$+0.001</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:05AM-9:10AM ET</div>
+    <div class="mc-cid"><code>0x5218dd7d6c31598d572e54060a6640b143d8b7d9e1ebe0391afd462eae130739</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x5218dd7d6c31598d572e54060a6640b143d8b7d9e1ebe0391afd462eae.png" alt="0x5218dd7d6c31598d572e54060a6640b143d8b7d9e1ebe0391afd462eae130739">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.009 · delay=$+0.000 · exec=$+0.005 · resid=$+0.001</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 10:10PM-10:15PM ET</div>
+    <div class="mc-cid"><code>0xd81e00b81cea4cb1a51e87dc72ee45901a99c576c0330d28db5c8588b99b7c93</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xd81e00b81cea4cb1a51e87dc72ee45901a99c576c0330d28db5c8588b9.png" alt="0xd81e00b81cea4cb1a51e87dc72ee45901a99c576c0330d28db5c8588b99b7c93">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.004 · delay=$+0.000 · exec=$+0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:25AM-7:30AM ET</div>
+    <div class="mc-cid"><code>0x9658307826e51034d74003f91d09ced5a9071536835bf3909b84795b3ca8872e</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x9658307826e51034d74003f91d09ced5a9071536835bf3909b84795b3c.png" alt="0x9658307826e51034d74003f91d09ced5a9071536835bf3909b84795b3ca8872e">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.045 · <b>real_pnl/share</b>=$+0.040 · delay=$+0.010 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:45AM-4:50AM ET</div>
+    <div class="mc-cid"><code>0x5963fdb1d7519656cae062d0192d8600d6f718ab67f57a4f885b539585e3b1e3</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x5963fdb1d7519656cae062d0192d8600d6f718ab67f57a4f885b539585.png" alt="0x5963fdb1d7519656cae062d0192d8600d6f718ab67f57a4f885b539585e3b1e3">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.020 · delay=$+0.010 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:30AM-5:35AM ET</div>
+    <div class="mc-cid"><code>0x0208424234db6fcd1564e199b5553bb1f3a5e08e3fa8c2e1339438e078377ddb</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x0208424234db6fcd1564e199b5553bb1f3a5e08e3fa8c2e1339438e078.png" alt="0x0208424234db6fcd1564e199b5553bb1f3a5e08e3fa8c2e1339438e078377ddb">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:35AM-6:40AM ET</div>
+    <div class="mc-cid"><code>0x269c07b6338e7d05180041fc1af399da7720f15e78e42d7f98700ce7dd5d0cc3</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x269c07b6338e7d05180041fc1af399da7720f15e78e42d7f98700ce7dd.png" alt="0x269c07b6338e7d05180041fc1af399da7720f15e78e42d7f98700ce7dd5d0cc3">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:55AM-8:00AM ET</div>
+    <div class="mc-cid"><code>0x2b7b76d7112cb62f33fe3ac90aa9f29e0875993e1106f8267787726b862ce9b0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x2b7b76d7112cb62f33fe3ac90aa9f29e0875993e1106f8267787726b86.png" alt="0x2b7b76d7112cb62f33fe3ac90aa9f29e0875993e1106f8267787726b862ce9b0">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:50AM-12:55AM ET</div>
+    <div class="mc-cid"><code>0x4514c5a7bfabedc23a4cb276aecf928e211d3727381676809f7c4366a6c0b169</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x4514c5a7bfabedc23a4cb276aecf928e211d3727381676809f7c4366a6.png" alt="0x4514c5a7bfabedc23a4cb276aecf928e211d3727381676809f7c4366a6c0b169">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.005 · exec=$+0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:15AM-4:20AM ET</div>
+    <div class="mc-cid"><code>0x827823fc546dee52edc81eae34c484bde33959ad8ec71a1c8f0559aa56ab5d60</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x827823fc546dee52edc81eae34c484bde33959ad8ec71a1c8f0559aa56.png" alt="0x827823fc546dee52edc81eae34c484bde33959ad8ec71a1c8f0559aa56ab5d60">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.010 · delay=$-0.005 · exec=$+0.010 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 12:35AM-12:40AM ET</div>
+    <div class="mc-cid"><code>0x9d7e1396161507726dc62a5bf91c0ad8d976a9aa1d2361a3fc38c70d0358d488</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x9d7e1396161507726dc62a5bf91c0ad8d976a9aa1d2361a3fc38c70d03.png" alt="0x9d7e1396161507726dc62a5bf91c0ad8d976a9aa1d2361a3fc38c70d0358d488">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.915 · <b>real_pnl/share</b>=$-0.920 · delay=$+0.000 · exec=$+0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:00AM-5:05AM ET</div>
+    <div class="mc-cid"><code>0x440bed2c7b0d2f388fbc88138a4bd07e1dbed2a69b9a28c0295d546250c4c511</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x440bed2c7b0d2f388fbc88138a4bd07e1dbed2a69b9a28c0295d546250.png" alt="0x440bed2c7b0d2f388fbc88138a4bd07e1dbed2a69b9a28c0295d546250c4c511">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.020 · delay=$+0.000 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:50AM-1:55AM ET</div>
+    <div class="mc-cid"><code>0x424a1af470be5bf9a0eec5c8f94f32c174d92faddebfc3b27874b18c8ea1c89d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x424a1af470be5bf9a0eec5c8f94f32c174d92faddebfc3b27874b18c8e.png" alt="0x424a1af470be5bf9a0eec5c8f94f32c174d92faddebfc3b27874b18c8ea1c89d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.030 · delay=$+0.000 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 5:20AM-5:25AM ET</div>
+    <div class="mc-cid"><code>0x8db0bd45b2c4875a51b26f85b6a23b9980198a9960342063f8e6ae3ea188bf4c</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x8db0bd45b2c4875a51b26f85b6a23b9980198a9960342063f8e6ae3ea1.png" alt="0x8db0bd45b2c4875a51b26f85b6a23b9980198a9960342063f8e6ae3ea188bf4c">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.030 · delay=$+0.000 · exec=$-0.005 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 3:55AM-4:00AM ET</div>
+    <div class="mc-cid"><code>0xe038eee2df0095942940d42838b284daf2c6cd05b550d458f7e1a689d28f32d7</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xe038eee2df0095942940d42838b284daf2c6cd05b550d458f7e1a689d2.png" alt="0xe038eee2df0095942940d42838b284daf2c6cd05b550d458f7e1a689d28f32d7">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.425 · <b>real_pnl/share</b>=$-0.430 · delay=$+0.010 · exec=$-0.005 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:50AM-4:55AM ET</div>
+    <div class="mc-cid"><code>0x34b776c40c04f66854633fa69ab40901294a594dc9fd174499660c1b0d4e644c</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x34b776c40c04f66854633fa69ab40901294a594dc9fd174499660c1b0d.png" alt="0x34b776c40c04f66854633fa69ab40901294a594dc9fd174499660c1b0d4e644c">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.024 · <b>real_pnl/share</b>=$+0.020 · delay=$+0.008 · exec=$-0.004 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:45PM-11:50PM ET</div>
+    <div class="mc-cid"><code>0x9e3f8743e26a3e38f4b0206b653bb867174c09380686274a35c14a619cd43cb4</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x9e3f8743e26a3e38f4b0206b653bb867174c09380686274a35c14a619c.png" alt="0x9e3f8743e26a3e38f4b0206b653bb867174c09380686274a35c14a619cd43cb4">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.510 · <b>real_pnl/share</b>=$+0.506 · delay=$-0.041 · exec=$-0.005 · resid=$+0.049</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 2:40AM-2:45AM ET</div>
+    <div class="mc-cid"><code>0x2687546b0f0dbd761f883ea604cebfd046afe58605c147bef09a86e2b4aa3853</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x2687546b0f0dbd761f883ea604cebfd046afe58605c147bef09a86e2b4.png" alt="0x2687546b0f0dbd761f883ea604cebfd046afe58605c147bef09a86e2b4aa3853">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.025 · <b>real_pnl/share</b>=$+0.028 · delay=$+0.000 · exec=$-0.005 · resid=$+0.002</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 11:50PM-11:55PM ET</div>
+    <div class="mc-cid"><code>0xb1bd14ee63c63912ef805031c9d3701f8a1e7271df9aa37d08b71a7f32fdf868</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xb1bd14ee63c63912ef805031c9d3701f8a1e7271df9aa37d08b71a7f32.png" alt="0xb1bd14ee63c63912ef805031c9d3701f8a1e7271df9aa37d08b71a7f32fdf868">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.155 · <b>real_pnl/share</b>=$-0.158 · delay=$+0.000 · exec=$-0.006 · resid=$+0.009</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:05AM-4:10AM ET</div>
+    <div class="mc-cid"><code>0xf6432e4735d6a5a448c7907ab95d4b6c699180dda66058ad8f4a73ef1244d447</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xf6432e4735d6a5a448c7907ab95d4b6c699180dda66058ad8f4a73ef12.png" alt="0xf6432e4735d6a5a448c7907ab95d4b6c699180dda66058ad8f4a73ef1244d447">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.425 · <b>real_pnl/share</b>=$+0.428 · delay=$+0.000 · exec=$-0.006 · resid=$+0.003</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 9:40AM-9:45AM ET</div>
+    <div class="mc-cid"><code>0x23e8102ff1131661998100ce22a61489e6b75e104c3367e05bd5dde7dd5cb595</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x23e8102ff1131661998100ce22a61489e6b75e104c3367e05bd5dde7dd.png" alt="0x23e8102ff1131661998100ce22a61489e6b75e104c3367e05bd5dde7dd5cb595">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.007 · <b>real_pnl/share</b>=$+0.010 · delay=$-0.001 · exec=$-0.002 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:50AM-6:55AM ET</div>
+    <div class="mc-cid"><code>0x62a40aeeb34ea363676e34c45947747eee9dd3509750bcc25d833d389152648e</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x62a40aeeb34ea363676e34c45947747eee9dd3509750bcc25d833d3891.png" alt="0x62a40aeeb34ea363676e34c45947747eee9dd3509750bcc25d833d389152648e">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.004 · <b>real_pnl/share</b>=$+0.002 · delay=$+0.002 · exec=$-0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:20AM-7:25AM ET</div>
+    <div class="mc-cid"><code>0x3c826ebc780d028af2e6c7ba552ea50e9227e381cba1528dc5c2cecd6021fa76</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x3c826ebc780d028af2e6c7ba552ea50e9227e381cba1528dc5c2cecd60.png" alt="0x3c826ebc780d028af2e6c7ba552ea50e9227e381cba1528dc5c2cecd6021fa76">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.015 · <b>real_pnl/share</b>=$+0.014 · delay=$+0.000 · exec=$+0.001 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 2:20AM-2:25AM ET</div>
+    <div class="mc-cid"><code>0xbb2a19ec6b4216c58b1dc226d6fed32a24cc6de062c846fc765602c717c77d19</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xbb2a19ec6b4216c58b1dc226d6fed32a24cc6de062c846fc765602c717.png" alt="0xbb2a19ec6b4216c58b1dc226d6fed32a24cc6de062c846fc765602c717c77d19">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.035 · <b>real_pnl/share</b>=$+0.036 · delay=$+0.000 · exec=$-0.005 · resid=$+0.004</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 7:45AM-7:50AM ET</div>
+    <div class="mc-cid"><code>0x2eeb6b0275cc8fe606de391e87d90405e9e48b443b4bce0027f17bf4b248ecb5</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x2eeb6b0275cc8fe606de391e87d90405e9e48b443b4bce0027f17bf4b2.png" alt="0x2eeb6b0275cc8fe606de391e87d90405e9e48b443b4bce0027f17bf4b248ecb5">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 4:40AM-4:45AM ET</div>
+    <div class="mc-cid"><code>0x516696c3ecfbfe820bd02ce59a6260ddb5f9914a7ddda41a6df528cd7b1bd407</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0x516696c3ecfbfe820bd02ce59a6260ddb5f9914a7ddda41a6df528cd7b.png" alt="0x516696c3ecfbfe820bd02ce59a6260ddb5f9914a7ddda41a6df528cd7b1bd407">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 6:30AM-6:35AM ET</div>
+    <div class="mc-cid"><code>0xb09b9e525fbc56cce13c5084cea516fd08b08a6954af0abce4c4512421f8147d</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xb09b9e525fbc56cce13c5084cea516fd08b08a6954af0abce4c4512421.png" alt="0xb09b9e525fbc56cce13c5084cea516fd08b08a6954af0abce4c4512421f8147d">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 14, 9:45PM-9:50PM ET</div>
+    <div class="mc-cid"><code>0xc9c4f678ebb2c5e6fc7a172dcf8d7ef16409fed032cdb7b039fe1393027cefe7</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xc9c4f678ebb2c5e6fc7a172dcf8d7ef16409fed032cdb7b039fe139302.png" alt="0xc9c4f678ebb2c5e6fc7a172dcf8d7ef16409fed032cdb7b039fe1393027cefe7">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:35AM-8:40AM ET</div>
+    <div class="mc-cid"><code>0xd2e82ada13a370381ae6f34d18e7a1b6b2034b9598f6b6bdcb84980f4e49f7e0</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xd2e82ada13a370381ae6f34d18e7a1b6b2034b9598f6b6bdcb84980f4e.png" alt="0xd2e82ada13a370381ae6f34d18e7a1b6b2034b9598f6b6bdcb84980f4e49f7e0">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$-0.000 · resid=$+0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="win">
+  <div class="mc-head">
+    <span class="mc-result mc-win">WIN</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=0</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 1:25AM-1:30AM ET</div>
+    <div class="mc-cid"><code>0xd403d1a82af4298fb8084208475c23bebfe108f9837c3da5c36b01d4dcc150ae</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xd403d1a82af4298fb8084208475c23bebfe108f9837c3da5c36b01d4dc.png" alt="0xd403d1a82af4298fb8084208475c23bebfe108f9837c3da5c36b01d4dcc150ae">
+  <div class="mc-foot"><b>offline_gross/share</b>=$+0.010 · <b>real_pnl/share</b>=$+0.010 · delay=$+0.000 · exec=$+0.000 · resid=$-0.000</div>
+</div>
+<div class="market-card" data-signal="tte1min" data-date="2026-05-15" data-bucket="shared" data-mismatch="shared" data-result="lose">
+  <div class="mc-head">
+    <span class="mc-result mc-lose">LOSE</span>
+    <span class="mc-mismatch mc-mr-shared">matched (N/A)</span>
+    <span class="mc-day">2026-05-15</span>
+    <span class="mc-sig">tte1min</span>
+    <span class="mc-bucket">matched markets</span>
+    <span class="mc-settle">settled=1</span>
+    <div class="mc-title">Bitcoin Up or Down - May 15, 8:05AM-8:10AM ET</div>
+    <div class="mc-cid"><code>0xcfb749f20f0d655c9b001f69b68e92873263055170dcda3befe7cdacfc876271</code></div>
+  </div>
+  <img loading="lazy" src="gap_detail_charts/shared/tte1min__0xcfb749f20f0d655c9b001f69b68e92873263055170dcda3befe7cdacfc.png" alt="0xcfb749f20f0d655c9b001f69b68e92873263055170dcda3befe7cdacfc876271">
+  <div class="mc-foot"><b>offline_gross/share</b>=$-0.990 · <b>real_pnl/share</b>=$-0.990 · delay=$+0.000 · exec=$+0.000 · resid=$+0.000</div>
 </div>
 </div>
 
