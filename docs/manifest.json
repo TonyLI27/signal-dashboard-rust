@@ -1,8 +1,9 @@
 {
   "dashboard": "rust",
-  "published_at_hkt": "2026-05-16T10:11:56+08:00",
+  "published_at_hkt": "2026-05-16T11:58:28+08:00",
   "source_date": "2026-05-16",
   "files": [
+    "data.json",
     "gap_decomposition.html",
     "gap_decomposition_byshares.png",
     "gap_decomposition_daily.png",
