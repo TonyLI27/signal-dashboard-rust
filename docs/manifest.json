@@ -1,7 +1,7 @@
 {
   "dashboard": "rust",
-  "published_at_hkt": "2026-05-17T12:24:55+08:00",
-  "source_date": "2026-05-17",
+  "published_at_hkt": "2026-05-18T10:56:28+08:00",
+  "source_date": "2026-05-18",
   "files": [
     "data.json",
     "gap_decomposition.html",
