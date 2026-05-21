@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<title>Tie-Out 进场分歧 · tte1min_bbo</title>
+<style>
+:root {
+  --navy: #1F3B66; --navy-deep: #122844; --gold: #C19A3E;
+  --gold-deep: #9C7B3D;
+  --gray-warm: #9A8E80; --gray-warm-dark: #5C5147;
+  --bg: #fdfdfb; --bg-soft: #f5f3ed;
+  --rule: #d9d4c8; --rule-strong: #5C5147;
+  --pos: #1F6F3F; --neg: #B8345B;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 14px; line-height: 1.55; color: #232323;
+  background: var(--bg); margin: 0;
+  display: flex; align-items: stretch;
+}
+.sidebar {
+  width: 240px; flex-shrink: 0; background: var(--bg-soft);
+  border-right: 1px solid var(--rule); padding: 28px 18px 32px;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto; font-size: 13px;
+}
+.sidebar .brand-mini {
+  font-family: Georgia, serif; font-weight: 600; color: var(--navy);
+  font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  border-bottom: 1px solid var(--rule); padding-bottom: 10px; margin-bottom: 14px;
+}
+.sidebar .brand-mini .date {
+  display: block; font-size: 11px;
+  font-family: "JetBrains Mono", Consolas, monospace;
+  color: var(--gray-warm-dark); letter-spacing: 0.04em;
+  margin-top: 4px; text-transform: none; font-weight: 500;
+}
+.sidebar .section { margin-top: 20px; }
+.sidebar .section-title {
+  font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold-deep); font-weight: 700; margin-bottom: 8px; padding-left: 4px;
+}
+.sidebar a.nav-link {
+  display: block; padding: 6px 10px; color: var(--navy-deep);
+  text-decoration: none; border-left: 2px solid transparent; margin-bottom: 1px;
+  font-size: 12.5px;
+}
+.sidebar a.nav-link:hover { background: white; border-left-color: var(--gold); }
+.sidebar a.nav-link.active {
+  background: var(--navy); color: white;
+  border-left-color: var(--gold); font-weight: 600;
+}
+.sidebar a.nav-link.sub { padding-left: 22px; font-size: 11.5px; position: relative; }
+.sidebar a.nav-link.sub::before {
+  content: "·"; position: absolute; left: 12px; color: var(--gray-warm);
+}
+.sidebar a.nav-link code {
+  font-family: "JetBrains Mono", Consolas, monospace; font-size: 10.5px;
+  background: transparent;
+}
+main.content { flex: 1; min-width: 0; }
+.page { max-width: 1320px; margin: 0 auto; padding: 36px 44px 64px; }
+@media (max-width: 900px) {
+  body { display: block; }
+  .sidebar { width: 100%; height: auto; position: static;
+              border-right: none; border-bottom: 1px solid var(--rule);
+              padding: 16px 20px; }
+  .page { padding: 22px 20px 40px; }
+}
+.masthead { border-bottom: 2px solid var(--navy); padding-bottom: 14px;
+            margin-bottom: 22px; }
+.masthead .brand { font-family: Georgia, serif; font-size: 22px;
+                    color: var(--navy); font-weight: 600;
+                    text-transform: uppercase; letter-spacing: 0.04em; }
+.masthead .subtitle { font-size: 13px; color: var(--gray-warm-dark);
+                       margin-top: 4px; }
+.masthead .meta-row { display: flex; gap: 32px; margin-top: 14px;
+                       flex-wrap: wrap; font-size: 12px;
+                       color: var(--gray-warm-dark); letter-spacing: 0.03em; }
+.masthead .meta-row span b { color: var(--navy-deep); font-weight: 600; }
+h1 { font-family: Georgia, serif; color: var(--navy); font-size: 24px;
+      border-bottom: 1px solid var(--rule); padding-bottom: 8px;
+      margin: 8px 0 18px; }
+h2 { font-family: Georgia, serif; color: var(--navy); font-size: 17px;
+      margin: 32px 0 12px; padding-left: 10px; border-left: 3px solid var(--gold); }
+h3 { font-family: Georgia, serif; color: var(--navy-deep); font-size: 14px;
+      margin: 20px 0 8px; }
+img.chart { max-width: 100%; display: block; margin: 6px 0 14px;
+            border: 1px solid var(--rule); background: white; padding: 4px; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0 22px;
+        background: white; font-size: 13px; }
+thead th { border-top: 2px solid var(--rule-strong);
+            border-bottom: 1px solid var(--rule-strong);
+            padding: 8px 12px; text-align: left; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            font-size: 11px; color: var(--navy-deep); background: var(--bg-soft); }
+tbody td { padding: 7px 12px; border-bottom: 1px solid var(--rule); }
+td.num { text-align: right; font-variant-numeric: tabular-nums;
+          font-family: "JetBrains Mono", Consolas, monospace; font-size: 12.5px; }
+td.label { color: var(--gray-warm-dark); font-size: 12px; }
+td.small { font-size: 11.5px; color: var(--gray-warm-dark); }
+table.kpi tbody tr:hover { background: var(--bg-soft); }
+.meta { font-size: 12.5px; color: var(--gray-warm-dark); margin: 0 0 10px; }
+.note { background: var(--bg-soft); border-left: 3px solid var(--gold);
+         padding: 10px 16px; margin: 12px 0 22px;
+         font-size: 13px; color: var(--gray-warm-dark); }
+.grid-3 {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;
+  margin: 8px 0 16px;
+}
+.grid-3 .cell { background: white; padding: 4px 4px 8px; border: 1px solid var(--rule); }
+.grid-3 .cell h3 { margin: 6px 8px 4px; font-size: 12.5px;
+                    color: var(--navy-deep); }
+.grid-3 .cell img { width: 100%; height: auto; display: block;
+                     margin: 0; border: none; padding: 0; }
+@media (max-width: 1100px) { .grid-3 { grid-template-columns: 1fr; } }
+.footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--rule);
+           color: var(--gray-warm-dark); font-size: 11px; letter-spacing: 0.04em; }
+.footer code { background: var(--bg-soft); padding: 1px 5px; border-radius: 2px; }
+.section-tag { display: inline-block; font-size: 10.5px; letter-spacing: 0.1em;
+                text-transform: uppercase; color: var(--gold-deep); font-weight: 600;
+                margin-right: 6px; }
+
+.grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin: 8px 0 24px; }
+.grid-4 .cell { background: white; padding: 4px; border: 1px solid var(--rule); }
+.grid-4 .cell img { width: 100%; height: auto; display: block; }
+@media (max-width: 1400px) { .grid-4 { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 1100px) { .grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px)  { .grid-4 { grid-template-columns: 1fr; } }
+.small { font-size: 11.5px; }
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand-mini">
+    Signal Dashboard · RUST
+    <span class="date">2026-05-21</span>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Rust Bot 实盘</div>
+    <a class="nav-link" href="live_pnl.html">Live PnL · 3 strategies</a>
+    <a class="nav-link sub" href="online_pnl_bbo.html">exp_bbo</a>
+    <a class="nav-link sub" href="online_pnl_single.html">exp_single</a>
+    <a class="nav-link sub" href="online_pnl_taker.html">exp_taker</a>
+    <a class="nav-link" href="../old_pnl/index.html" target="_blank" rel="noopener">⏸ Old PnL (archived)</a>
+    <a class="nav-link" href="index.html">总览</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">线上线下对比 (rust)</div>
+    <a class="nav-link" href="tieout_index.html">总体对比</a>
+    <a class="nav-link" href="gap_decomposition.html">收益差距分解</a>
+    <a class="nav-link sub" href="tieout_tte1min_bbo.html"><code>tte1min_bbo</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_single.html"><code>tte1min_single</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_taker.html"><code>tte1min_taker</code></a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">线上线下对比 · 24h (rust)</div>
+    <a class="nav-link" href="tieout_index_24h.html">总体对比 · 24h</a>
+    <a class="nav-link sub" href="tieout_tte1min_bbo_24h.html"><code>tte1min_bbo</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_single_24h.html"><code>tte1min_single</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_taker_24h.html"><code>tte1min_taker</code></a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">进场分歧诊断 (rust)</div>
+    <a class="nav-link sub active" href="tieout_tte1min_bbo_diff_markets.html"><code>tte1min_bbo</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_single_diff_markets.html"><code>tte1min_single</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_taker_diff_markets.html"><code>tte1min_taker</code></a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">线下回测 (rust 自产)</div>
+    <a class="nav-link sub" href="online_tag7k_entry14.html">pnlcumsum (TAG=$7k, E=14%)</a><a class="nav-link sub" href="tte1_conf82_entry07.html">tte1min (Conf=82%, E=7%)</a><a class="nav-link sub" href="new_user_big4k_entry45.html">new_user_big4k (E=45%)</a>
+  </div>
+</aside>
+<main class="content"><div class="page">
+
+<div class="masthead">
+  <div class="brand">5min BTC · Tie-Out · 进场分歧诊断 · tte1min_bbo</div>
+  <div class="subtitle">tte1min · bbo · $25/market · Rust Bot  ·  threshold ±0.07</div>
+  <div class="meta-row">
+    <span>仅 ONLINE · <b>0</b></span>
+    <span>仅 OFFLINE · <b>0</b></span>
+    <span>BOTH · <b>0</b></span>
+    <span>offline 数据截止 · <b>2026-05-21 05:37 UTC</b></span>
+    <span>因数据未更新被剔除 · <b>0</b></span>
+  </div>
+</div>
+
+<div class="note">
+每个子图：<b>横轴只显示该市场自己的 5 分钟 live 窗口</b>，纵轴 smart_ratio。
+蓝实线 = bot 实时记录的 SR (point-in-time poll)；红方块线 = 线下 frozen-tag
+重算的 SR (per-minute aggregated)。灰虚线 = ±threshold；点划线 = 进场时刻
+（蓝=bot, 红=offline backtest）。
+<br><br>
+<b>注意</b>：所有 <code>end_time_utc &gt; 2026-05-21 05:37 UTC</code> 的市场已被剔除
+—— 它们在 <code>trades_alt_5min.parquet</code> 里还没有完整数据，offline
+回测无法评估，diff 不可信。剩下的才是真正的 online vs offline 分歧。
+</div>
+
+<h2>仅 ONLINE 进场（bot 进了，offline 没进）</h2><p class='note'>（0 markets）</p><h2>仅 OFFLINE 进场（offline 进了，bot 没进）</h2><p class='note'>（0 markets）</p>
+
+<div class="footer">
+generated by <code>tie_out/run_tieout.py</code> · 2026-05-21 06:40 UTC
+</div>
+
+</div></main></body></html>
