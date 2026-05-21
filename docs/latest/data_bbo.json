@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-05-21T08:53:53+00:00",
+    "generated_at": "2026-05-21T09:04:43+00:00",
     "wallet": "0xb5410aE1C135A3a97C997600B27243d62FBd169d",
     "window_start_ts": 1779336000,
-    "window_end_ts": 1779353700,
-    "n_total_records": 81,
-    "n_btc_records": 81
+    "window_end_ts": 1779354300,
+    "n_total_records": 93,
+    "n_btc_records": 93
   },
   "kpi": {
-    "total_pnl": -168.34384599999998,
-    "n_markets": 25,
-    "n_winners": 17,
+    "total_pnl": -147.056118,
+    "n_markets": 27,
+    "n_winners": 19,
     "n_losers": 8,
-    "win_rate_pct": 68.0,
-    "avg_pnl": -6.733753839999999,
+    "win_rate_pct": 70.37037037037037,
+    "avg_pnl": -5.446522888888889,
     "median_pnl": 0.75,
-    "rot": -0.14327620383811754,
-    "total_buy_volume": 1174.960262,
+    "rot": -0.1120712669040155,
+    "total_buy_volume": 1312.1661070000002,
     "running_days": 1,
     "total_rebates": 0
   },
@@ -259,7 +259,15 @@
     },
     {
       "t": 1779353700000,
-      "v": -168.34384599999998
+      "v": -111.09594799999999
+    },
+    {
+      "t": 1779354000000,
+      "v": -107.063149
+    },
+    {
+      "t": 1779354300000,
+      "v": -147.056118
     }
   ],
   "regime": [
@@ -301,9 +309,9 @@
     },
     {
       "bin": "[0.6,0.7)",
-      "avg_pnl": -24.375,
+      "avg_pnl": 4.248949,
       "n_markets": 2,
-      "total_pnl": -48.75
+      "total_pnl": 8.497898
     },
     {
       "bin": "[0.7,0.8)",
@@ -313,15 +321,15 @@
     },
     {
       "bin": "[0.8,0.9)",
-      "avg_pnl": 6.831418142857144,
-      "n_markets": 7,
-      "total_pnl": 47.81992700000001
+      "avg_pnl": 0.9783697500000006,
+      "n_markets": 8,
+      "total_pnl": 7.826958000000005
     },
     {
       "bin": "[0.9,1.0]",
-      "avg_pnl": 0.7823977777777773,
-      "n_markets": 9,
-      "total_pnl": 7.041579999999996
+      "avg_pnl": 1.1074378999999994,
+      "n_markets": 10,
+      "total_pnl": 11.074378999999993
     }
   ],
   "regime_hourly": [
@@ -375,15 +383,15 @@
     },
     {
       "hour": 8,
-      "avg_pnl": -15.077703374999999,
-      "total_pnl": -120.62162699999999,
+      "avg_pnl": -7.921716124999999,
+      "total_pnl": -63.37372899999999,
       "n_markets": 8
     },
     {
       "hour": 9,
-      "avg_pnl": 0.0,
-      "total_pnl": 0.0,
-      "n_markets": 0
+      "avg_pnl": -17.980085000000003,
+      "total_pnl": -35.960170000000005,
+      "n_markets": 2
     },
     {
       "hour": 10,
@@ -1115,17 +1123,17 @@
       "idx": 80,
       "day": "Thu",
       "hour": 8,
-      "avg_pnl": -15.077703374999999,
-      "total_pnl": -120.62162699999999,
+      "avg_pnl": -7.921716124999999,
+      "total_pnl": -63.37372899999999,
       "n_markets": 8
     },
     {
       "idx": 81,
       "day": "Thu",
       "hour": 9,
-      "avg_pnl": 0.0,
-      "total_pnl": 0.0,
-      "n_markets": 0
+      "avg_pnl": -17.980085000000003,
+      "total_pnl": -35.960170000000005,
+      "n_markets": 2
     },
     {
       "idx": 82,
@@ -1821,25 +1829,25 @@
     {
       "week_start": "2026-05-15",
       "week_end": "2026-05-21",
-      "n_markets": 25,
-      "n_winners": 17,
+      "n_markets": 27,
+      "n_winners": 19,
       "n_losers": 8,
-      "win_rate_pct": 68.0,
-      "total_pnl": -168.343846,
+      "win_rate_pct": 70.37037037037037,
+      "total_pnl": -147.056118,
       "total_rebates": 0.0
     }
   ],
   "extremes": {
     "best": {
-      "title": "Bitcoin Up or Down - May 21, 12:40AM-12:45AM ET",
+      "title": "Bitcoin Up or Down - May 21, 4:50AM-4:55AM ET",
       "outcome": "Down",
-      "market_end_ts": 1779338700,
-      "weighted_entry_price": 0.7533330448760621,
-      "n_buys": 6,
-      "total_buy_size": 74.996665,
-      "pnl": 18.499198999999997,
+      "market_end_ts": 1779353700,
+      "weighted_entry_price": 0.6733298080150568,
+      "n_buys": 5,
+      "total_buy_size": 74.992756,
+      "pnl": 24.497898,
       "shares": 25.0,
-      "return_pct": 73.99679599999999
+      "return_pct": 97.991592
     },
     "worst": {
       "title": "Bitcoin Up or Down - May 21, 4:10AM-4:15AM ET",
@@ -1855,15 +1863,37 @@
   },
   "recent": [
     {
+      "title": "Bitcoin Up or Down - May 21, 5:00AM-5:05AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779354300,
+      "weighted_entry_price": 0.8000054930032422,
+      "n_buys": 3,
+      "total_buy_size": 49.990868,
+      "pnl": -39.992969,
+      "shares": 25.0,
+      "return_pct": -159.971876
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 4:55AM-5:00AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779354000,
+      "weighted_entry_price": 0.9341071576342478,
+      "n_buys": 4,
+      "total_buy_size": 62.222221,
+      "pnl": 4.032798999999997,
+      "shares": 25.0,
+      "return_pct": 16.13119599999999
+    },
+    {
       "title": "Bitcoin Up or Down - May 21, 4:50AM-4:55AM ET",
       "outcome": "Down",
       "market_end_ts": 1779353700,
-      "weighted_entry_price": 0.655,
-      "n_buys": 2,
-      "total_buy_size": 50.0,
-      "pnl": -32.75,
+      "weighted_entry_price": 0.6733298080150568,
+      "n_buys": 5,
+      "total_buy_size": 74.992756,
+      "pnl": 24.497898,
       "shares": 25.0,
-      "return_pct": -131.0
+      "return_pct": 97.991592
     },
     {
       "title": "Bitcoin Up or Down - May 21, 4:45AM-4:50AM ET",
@@ -2095,28 +2125,6 @@
       "pnl": 18.499198999999997,
       "shares": 25.0,
       "return_pct": 73.99679599999999
-    },
-    {
-      "title": "Bitcoin Up or Down - May 21, 12:25AM-12:30AM ET",
-      "outcome": "Up",
-      "market_end_ts": 1779337800,
-      "weighted_entry_price": 0.9,
-      "n_buys": 1,
-      "total_buy_size": 25.0,
-      "pnl": 2.342500000000001,
-      "shares": 25.0,
-      "return_pct": 9.370000000000005
-    },
-    {
-      "title": "Bitcoin Up or Down - May 21, 12:15AM-12:20AM ET",
-      "outcome": "Up",
-      "market_end_ts": 1779337200,
-      "weighted_entry_price": 0.64,
-      "n_buys": 1,
-      "total_buy_size": 25.0,
-      "pnl": -16.0,
-      "shares": 25.0,
-      "return_pct": -64.0
     }
   ],
   "return_view": {
@@ -2128,12 +2136,12 @@
       }
     ],
     "kpi": {
-      "total_return_pct": -673.3753839999999,
-      "n_markets": 25,
-      "n_winners": 17,
+      "total_return_pct": -588.224472,
+      "n_markets": 27,
+      "n_winners": 19,
       "n_losers": 8,
-      "win_rate_pct": 68.0,
-      "avg_return_pct": -26.935015359999998,
+      "win_rate_pct": 70.37037037037037,
+      "avg_return_pct": -21.786091555555554,
       "median_return_pct": 3.0,
       "running_days": 1,
       "total_rebates": 0
@@ -2377,7 +2385,15 @@
       },
       {
         "t": 1779353700000,
-        "v": -673.3753839999999
+        "v": -444.38379199999997
+      },
+      {
+        "t": 1779354000000,
+        "v": -428.252596
+      },
+      {
+        "t": 1779354300000,
+        "v": -588.224472
       }
     ],
     "regime": [
@@ -2419,9 +2435,9 @@
       },
       {
         "bin": "[0.6,0.7)",
-        "avg_pnl": -97.5,
+        "avg_pnl": 16.995796,
         "n_markets": 2,
-        "total_pnl": -195.0
+        "total_pnl": 33.991592
       },
       {
         "bin": "[0.7,0.8)",
@@ -2431,15 +2447,15 @@
       },
       {
         "bin": "[0.8,0.9)",
-        "avg_pnl": 27.325672571428576,
-        "n_markets": 7,
-        "total_pnl": 191.27970800000003
+        "avg_pnl": 3.9134790000000024,
+        "n_markets": 8,
+        "total_pnl": 31.30783200000002
       },
       {
         "bin": "[0.9,1.0]",
-        "avg_pnl": 3.129591111111109,
-        "n_markets": 9,
-        "total_pnl": 28.166319999999985
+        "avg_pnl": 4.429751599999998,
+        "n_markets": 10,
+        "total_pnl": 44.29751599999997
       }
     ],
     "regime_hourly": [
@@ -2493,15 +2509,15 @@
       },
       {
         "hour": 8,
-        "avg_pnl": -60.310813499999995,
-        "total_pnl": -482.48650799999996,
+        "avg_pnl": -31.686864499999995,
+        "total_pnl": -253.49491599999996,
         "n_markets": 8
       },
       {
         "hour": 9,
-        "avg_pnl": 0.0,
-        "total_pnl": 0.0,
-        "n_markets": 0
+        "avg_pnl": -71.92034000000001,
+        "total_pnl": -143.84068000000002,
+        "n_markets": 2
       },
       {
         "hour": 10,
@@ -3233,17 +3249,17 @@
         "idx": 80,
         "day": "Thu",
         "hour": 8,
-        "avg_pnl": -60.310813499999995,
-        "total_pnl": -482.48650799999996,
+        "avg_pnl": -31.686864499999995,
+        "total_pnl": -253.49491599999996,
         "n_markets": 8
       },
       {
         "idx": 81,
         "day": "Thu",
         "hour": 9,
-        "avg_pnl": 0.0,
-        "total_pnl": 0.0,
-        "n_markets": 0
+        "avg_pnl": -71.92034000000001,
+        "total_pnl": -143.84068000000002,
+        "n_markets": 2
       },
       {
         "idx": 82,
@@ -3938,25 +3954,25 @@
       {
         "week_start": "2026-05-15",
         "week_end": "2026-05-21",
-        "n_markets": 25,
-        "n_winners": 17,
+        "n_markets": 27,
+        "n_winners": 19,
         "n_losers": 8,
-        "win_rate_pct": 68.0,
-        "total_pnl": -673.375384,
+        "win_rate_pct": 70.37037037037037,
+        "total_pnl": -588.224472,
         "total_rebates": 0.0
       }
     ],
     "extremes": {
       "best": {
-        "title": "Bitcoin Up or Down - May 21, 12:40AM-12:45AM ET",
+        "title": "Bitcoin Up or Down - May 21, 4:50AM-4:55AM ET",
         "outcome": "Down",
-        "market_end_ts": 1779338700,
-        "weighted_entry_price": 0.7533330448760621,
-        "n_buys": 6,
-        "total_buy_size": 74.996665,
-        "pnl": 18.499198999999997,
+        "market_end_ts": 1779353700,
+        "weighted_entry_price": 0.6733298080150568,
+        "n_buys": 5,
+        "total_buy_size": 74.992756,
+        "pnl": 24.497898,
         "shares": 25.0,
-        "return_pct": 73.99679599999999
+        "return_pct": 97.991592
       },
       "worst": {
         "title": "Bitcoin Up or Down - May 21, 4:10AM-4:15AM ET",
@@ -3972,15 +3988,37 @@
     },
     "recent": [
       {
+        "title": "Bitcoin Up or Down - May 21, 5:00AM-5:05AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779354300,
+        "weighted_entry_price": 0.8000054930032422,
+        "n_buys": 3,
+        "total_buy_size": 49.990868,
+        "pnl": -39.992969,
+        "shares": 25.0,
+        "return_pct": -159.971876
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 4:55AM-5:00AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779354000,
+        "weighted_entry_price": 0.9341071576342478,
+        "n_buys": 4,
+        "total_buy_size": 62.222221,
+        "pnl": 4.032798999999997,
+        "shares": 25.0,
+        "return_pct": 16.13119599999999
+      },
+      {
         "title": "Bitcoin Up or Down - May 21, 4:50AM-4:55AM ET",
         "outcome": "Down",
         "market_end_ts": 1779353700,
-        "weighted_entry_price": 0.655,
-        "n_buys": 2,
-        "total_buy_size": 50.0,
-        "pnl": -32.75,
+        "weighted_entry_price": 0.6733298080150568,
+        "n_buys": 5,
+        "total_buy_size": 74.992756,
+        "pnl": 24.497898,
         "shares": 25.0,
-        "return_pct": -131.0
+        "return_pct": 97.991592
       },
       {
         "title": "Bitcoin Up or Down - May 21, 4:45AM-4:50AM ET",
@@ -4212,28 +4250,6 @@
         "pnl": 18.499198999999997,
         "shares": 25.0,
         "return_pct": 73.99679599999999
-      },
-      {
-        "title": "Bitcoin Up or Down - May 21, 12:25AM-12:30AM ET",
-        "outcome": "Up",
-        "market_end_ts": 1779337800,
-        "weighted_entry_price": 0.9,
-        "n_buys": 1,
-        "total_buy_size": 25.0,
-        "pnl": 2.342500000000001,
-        "shares": 25.0,
-        "return_pct": 9.370000000000005
-      },
-      {
-        "title": "Bitcoin Up or Down - May 21, 12:15AM-12:20AM ET",
-        "outcome": "Up",
-        "market_end_ts": 1779337200,
-        "weighted_entry_price": 0.64,
-        "n_buys": 1,
-        "total_buy_size": 25.0,
-        "pnl": -16.0,
-        "shares": 25.0,
-        "return_pct": -64.0
       }
     ]
   }
