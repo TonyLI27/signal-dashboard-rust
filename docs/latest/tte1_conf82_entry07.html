@@ -145,7 +145,9 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
 
   <div class="section">
     <div class="section-title">Rust Bot 实盘</div>
-    <a class="nav-link" href="online_pnl.html">Rust funder PnL</a>
+    <a class="nav-link" href="live_pnl.html">Live PnL · 3 strategies</a>
+    <a class="nav-link sub" href="online_pnl_bbo.html">exp_bbo</a><a class="nav-link sub" href="online_pnl_single.html">exp_single</a><a class="nav-link sub" href="online_pnl_taker.html">exp_taker</a>
+    <a class="nav-link" href="../old_pnl/index.html" target="_blank" rel="noopener">⏸ Old PnL (archived)</a>
   </div>
 
   <div class="section">
@@ -160,21 +162,24 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
     <div class="section-title">线上线下对比 (rust)</div>
     <a class="nav-link" href="tieout_index.html">总体对比</a>
     <a class="nav-link" href="gap_decomposition.html">收益差距分解</a>
-    <a class="nav-link sub" href="tieout_pnlcumsum.html"><code>pnlcumsum</code></a>
-    <a class="nav-link sub" href="tieout_tte1min.html"><code>tte1min</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_bbo.html"><code>tte1min_bbo</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_single.html"><code>tte1min_single</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_taker.html"><code>tte1min_taker</code></a>
   </div>
 
   <div class="section">
     <div class="section-title">线上线下对比 · 24h (rust)</div>
     <a class="nav-link" href="tieout_index_24h.html">总体对比 · 24h</a>
-    <a class="nav-link sub" href="tieout_pnlcumsum_24h.html"><code>pnlcumsum</code></a>
-    <a class="nav-link sub" href="tieout_tte1min_24h.html"><code>tte1min</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_bbo_24h.html"><code>tte1min_bbo</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_single_24h.html"><code>tte1min_single</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_taker_24h.html"><code>tte1min_taker</code></a>
   </div>
 
   <div class="section">
     <div class="section-title">进场分歧诊断 (rust)</div>
-    <a class="nav-link sub" href="tieout_pnlcumsum_diff_markets.html"><code>pnlcumsum</code></a>
-    <a class="nav-link sub" href="tieout_tte1min_diff_markets.html"><code>tte1min</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_bbo_diff_markets.html"><code>tte1min_bbo</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_single_diff_markets.html"><code>tte1min_single</code></a>
+    <a class="nav-link sub" href="tieout_tte1min_taker_diff_markets.html"><code>tte1min_taker</code></a>
   </div>
 </aside>
 <main class="content"><div class="page">
@@ -185,7 +190,7 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
   <div class="meta-row">
     <span>信号代码 · <b><code>tte1_conf82_entry07</code></b></span>
     <span>报告日期 · <b>2026-05-21</b></span>
-    <span>Anchor · <b>2026-05-21 01:19 UTC</b></span>
+    <span>Anchor · <b>2026-05-21 05:18 UTC</b></span>
     <span>OOS 切分 · <b>2026-03-30</b></span>
   </div>
 </div>
@@ -195,7 +200,7 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
 
 <h2>分窗口指标（净 PnL 口径）</h2>
 <h3><span class="section-tag">指标</span>近 24 小时滚动</h3>
-<p class="meta">窗口：2026-05-20 01:19 → 2026-05-21 01:19 UTC</p>
+<p class="meta">窗口：2026-05-20 05:18 → 2026-05-21 05:18 UTC</p>
 <table>
 <thead><tr>
 <th>信号</th><th>Sharpe</th><th>终值净 PnL</th>
@@ -203,11 +208,11 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
 <th>胜率</th><th>Net ROT</th><th>Gross ROT</th><th>交易日数</th>
 </tr></thead>
 <tbody>
-<tr><td class="sig"><code>tte1_conf82_entry07</code><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">21.48</td><td class="num"><span class="pos">$3.36</span></td><td class="num">111</td><td class="num">295</td><td class="num">37.6%</td><td class="num">85.6%</td><td class="num"><span class="pos">0.0303</span></td><td class="num"><span class="pos">0.0424</span></td><td class="num">2</td></tr>
+<tr><td class="sig"><code>tte1_conf82_entry07</code><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">26.86</td><td class="num"><span class="pos">$2.51</span></td><td class="num">91</td><td class="num">294</td><td class="num">31.0%</td><td class="num">85.7%</td><td class="num"><span class="pos">0.0276</span></td><td class="num"><span class="pos">0.0393</span></td><td class="num">2</td></tr>
 </tbody>
 </table>
 <h3><span class="section-tag">指标</span>近 7 日滚动</h3>
-<p class="meta">窗口：2026-05-14 → 2026-05-21 01:19 UTC</p>
+<p class="meta">窗口：2026-05-14 → 2026-05-21 05:18 UTC</p>
 <table>
 <thead><tr>
 <th>信号</th><th>Sharpe</th><th>终值净 PnL</th>
@@ -215,7 +220,7 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
 <th>胜率</th><th>Net ROT</th><th>Gross ROT</th><th>交易日数</th>
 </tr></thead>
 <tbody>
-<tr><td class="sig"><code>tte1_conf82_entry07</code><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">10.37</td><td class="num"><span class="pos">$14.28</span></td><td class="num">1046</td><td class="num">2023</td><td class="num">51.7%</td><td class="num">79.3%</td><td class="num"><span class="pos">0.0137</span></td><td class="num"><span class="pos">0.0264</span></td><td class="num">8</td></tr>
+<tr><td class="sig"><code>tte1_conf82_entry07</code><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">10.54</td><td class="num"><span class="pos">$14.45</span></td><td class="num">1024</td><td class="num">2022</td><td class="num">50.6%</td><td class="num">79.3%</td><td class="num"><span class="pos">0.0141</span></td><td class="num"><span class="pos">0.0269</span></td><td class="num">8</td></tr>
 </tbody>
 </table>
 <h3><span class="section-tag">指标</span>OOS 全样本</h3>
@@ -227,7 +232,7 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
 <th>胜率</th><th>Net ROT</th><th>Gross ROT</th><th>交易日数</th>
 </tr></thead>
 <tbody>
-<tr><td class="sig"><code>tte1_conf82_entry07</code><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">7.78</td><td class="num"><span class="pos">$67.61</span></td><td class="num">5725</td><td class="num">14392</td><td class="num">39.8%</td><td class="num">74.8%</td><td class="num"><span class="pos">0.0118</span></td><td class="num"><span class="pos">0.0247</span></td><td class="num">53</td></tr>
+<tr><td class="sig"><code>tte1_conf82_entry07</code><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">7.78</td><td class="num"><span class="pos">$67.61</span></td><td class="num">5725</td><td class="num">14439</td><td class="num">39.6%</td><td class="num">74.8%</td><td class="num"><span class="pos">0.0118</span></td><td class="num"><span class="pos">0.0247</span></td><td class="num">53</td></tr>
 </tbody>
 </table>
 

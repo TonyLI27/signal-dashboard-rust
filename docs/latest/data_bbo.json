@@ -1,0 +1,3802 @@
+{
+  "meta": {
+    "generated_at": "2026-05-21T06:30:14+00:00",
+    "wallet": "0xb5410aE1C135A3a97C997600B27243d62FBd169d",
+    "window_start_ts": 1779336000,
+    "window_end_ts": 1779344700,
+    "n_total_records": 45,
+    "n_btc_records": 45
+  },
+  "kpi": {
+    "total_pnl": -54.66929700000001,
+    "n_markets": 15,
+    "n_winners": 11,
+    "n_losers": 4,
+    "win_rate_pct": 73.33333333333333,
+    "avg_pnl": -3.6446198000000005,
+    "median_pnl": 0.25,
+    "rot": -0.09111803142226804,
+    "total_buy_volume": 599.983298,
+    "running_days": 1,
+    "total_rebates": 0
+  },
+  "cumulative_pnl": [
+    {
+      "t": 1779336000000,
+      "v": 0.25
+    },
+    {
+      "t": 1779336300000,
+      "v": 0.25
+    },
+    {
+      "t": 1779336600000,
+      "v": 0.25
+    },
+    {
+      "t": 1779336900000,
+      "v": 0.25
+    },
+    {
+      "t": 1779337200000,
+      "v": -15.75
+    },
+    {
+      "t": 1779337500000,
+      "v": -15.75
+    },
+    {
+      "t": 1779337800000,
+      "v": -13.407499999999999
+    },
+    {
+      "t": 1779338100000,
+      "v": -13.407499999999999
+    },
+    {
+      "t": 1779338400000,
+      "v": -13.407499999999999
+    },
+    {
+      "t": 1779338700000,
+      "v": 5.091698999999998
+    },
+    {
+      "t": 1779339000000,
+      "v": 7.670378999999997
+    },
+    {
+      "t": 1779339300000,
+      "v": 7.670378999999997
+    },
+    {
+      "t": 1779339600000,
+      "v": 8.420378999999997
+    },
+    {
+      "t": 1779339900000,
+      "v": -15.052741000000005
+    },
+    {
+      "t": 1779340200000,
+      "v": -15.052741000000005
+    },
+    {
+      "t": 1779340500000,
+      "v": -14.802741000000005
+    },
+    {
+      "t": 1779340800000,
+      "v": -14.802741000000005
+    },
+    {
+      "t": 1779341100000,
+      "v": -9.552741000000005
+    },
+    {
+      "t": 1779341400000,
+      "v": -9.552741000000005
+    },
+    {
+      "t": 1779341700000,
+      "v": -19.052741000000005
+    },
+    {
+      "t": 1779342000000,
+      "v": -19.052741000000005
+    },
+    {
+      "t": 1779342300000,
+      "v": -18.802741000000005
+    },
+    {
+      "t": 1779342600000,
+      "v": -18.552741000000005
+    },
+    {
+      "t": 1779342900000,
+      "v": -56.66929700000001
+    },
+    {
+      "t": 1779343200000,
+      "v": -56.66929700000001
+    },
+    {
+      "t": 1779343500000,
+      "v": -56.66929700000001
+    },
+    {
+      "t": 1779343800000,
+      "v": -56.66929700000001
+    },
+    {
+      "t": 1779344100000,
+      "v": -56.66929700000001
+    },
+    {
+      "t": 1779344400000,
+      "v": -55.91929700000001
+    },
+    {
+      "t": 1779344700000,
+      "v": -54.66929700000001
+    }
+  ],
+  "regime": [
+    {
+      "bin": "[0.0,0.1)",
+      "avg_pnl": 0.0,
+      "n_markets": 0,
+      "total_pnl": 0.0
+    },
+    {
+      "bin": "[0.1,0.2)",
+      "avg_pnl": 0.0,
+      "n_markets": 0,
+      "total_pnl": 0.0
+    },
+    {
+      "bin": "[0.2,0.3)",
+      "avg_pnl": 0.0,
+      "n_markets": 0,
+      "total_pnl": 0.0
+    },
+    {
+      "bin": "[0.3,0.4)",
+      "avg_pnl": -23.696558666666665,
+      "n_markets": 3,
+      "total_pnl": -71.089676
+    },
+    {
+      "bin": "[0.4,0.5)",
+      "avg_pnl": 0.0,
+      "n_markets": 0,
+      "total_pnl": 0.0
+    },
+    {
+      "bin": "[0.5,0.6)",
+      "avg_pnl": 0.0,
+      "n_markets": 0,
+      "total_pnl": 0.0
+    },
+    {
+      "bin": "[0.6,0.7)",
+      "avg_pnl": -16.0,
+      "n_markets": 1,
+      "total_pnl": -16.0
+    },
+    {
+      "bin": "[0.7,0.8)",
+      "avg_pnl": 18.499198999999997,
+      "n_markets": 1,
+      "total_pnl": 18.499198999999997
+    },
+    {
+      "bin": "[0.8,0.9)",
+      "avg_pnl": 3.9143399999999993,
+      "n_markets": 2,
+      "total_pnl": 7.8286799999999985
+    },
+    {
+      "bin": "[0.9,1.0]",
+      "avg_pnl": 0.7615625000000001,
+      "n_markets": 8,
+      "total_pnl": 6.092500000000001
+    }
+  ],
+  "regime_hourly": [
+    {
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 4,
+      "avg_pnl": 1.5340757999999994,
+      "total_pnl": 7.670378999999997,
+      "n_markets": 5
+    },
+    {
+      "hour": 5,
+      "avg_pnl": -8.0424595,
+      "total_pnl": -64.339676,
+      "n_markets": 8
+    },
+    {
+      "hour": 6,
+      "avg_pnl": 1.0,
+      "total_pnl": 2.0,
+      "n_markets": 2
+    },
+    {
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    }
+  ],
+  "regime_weekly": [
+    {
+      "idx": 0,
+      "day": "Mon",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 1,
+      "day": "Mon",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 2,
+      "day": "Mon",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 3,
+      "day": "Mon",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 4,
+      "day": "Mon",
+      "hour": 4,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 5,
+      "day": "Mon",
+      "hour": 5,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 6,
+      "day": "Mon",
+      "hour": 6,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 7,
+      "day": "Mon",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 8,
+      "day": "Mon",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 9,
+      "day": "Mon",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 10,
+      "day": "Mon",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 11,
+      "day": "Mon",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 12,
+      "day": "Mon",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 13,
+      "day": "Mon",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 14,
+      "day": "Mon",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 15,
+      "day": "Mon",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 16,
+      "day": "Mon",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 17,
+      "day": "Mon",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 18,
+      "day": "Mon",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 19,
+      "day": "Mon",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 20,
+      "day": "Mon",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 21,
+      "day": "Mon",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 22,
+      "day": "Mon",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 23,
+      "day": "Mon",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 24,
+      "day": "Tue",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 25,
+      "day": "Tue",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 26,
+      "day": "Tue",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 27,
+      "day": "Tue",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 28,
+      "day": "Tue",
+      "hour": 4,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 29,
+      "day": "Tue",
+      "hour": 5,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 30,
+      "day": "Tue",
+      "hour": 6,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 31,
+      "day": "Tue",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 32,
+      "day": "Tue",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 33,
+      "day": "Tue",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 34,
+      "day": "Tue",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 35,
+      "day": "Tue",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 36,
+      "day": "Tue",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 37,
+      "day": "Tue",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 38,
+      "day": "Tue",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 39,
+      "day": "Tue",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 40,
+      "day": "Tue",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 41,
+      "day": "Tue",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 42,
+      "day": "Tue",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 43,
+      "day": "Tue",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 44,
+      "day": "Tue",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 45,
+      "day": "Tue",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 46,
+      "day": "Tue",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 47,
+      "day": "Tue",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 48,
+      "day": "Wed",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 49,
+      "day": "Wed",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 50,
+      "day": "Wed",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 51,
+      "day": "Wed",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 52,
+      "day": "Wed",
+      "hour": 4,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 53,
+      "day": "Wed",
+      "hour": 5,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 54,
+      "day": "Wed",
+      "hour": 6,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 55,
+      "day": "Wed",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 56,
+      "day": "Wed",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 57,
+      "day": "Wed",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 58,
+      "day": "Wed",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 59,
+      "day": "Wed",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 60,
+      "day": "Wed",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 61,
+      "day": "Wed",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 62,
+      "day": "Wed",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 63,
+      "day": "Wed",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 64,
+      "day": "Wed",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 65,
+      "day": "Wed",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 66,
+      "day": "Wed",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 67,
+      "day": "Wed",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 68,
+      "day": "Wed",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 69,
+      "day": "Wed",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 70,
+      "day": "Wed",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 71,
+      "day": "Wed",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 72,
+      "day": "Thu",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 73,
+      "day": "Thu",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 74,
+      "day": "Thu",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 75,
+      "day": "Thu",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 76,
+      "day": "Thu",
+      "hour": 4,
+      "avg_pnl": 1.5340757999999994,
+      "total_pnl": 7.670378999999997,
+      "n_markets": 5
+    },
+    {
+      "idx": 77,
+      "day": "Thu",
+      "hour": 5,
+      "avg_pnl": -8.0424595,
+      "total_pnl": -64.339676,
+      "n_markets": 8
+    },
+    {
+      "idx": 78,
+      "day": "Thu",
+      "hour": 6,
+      "avg_pnl": 1.0,
+      "total_pnl": 2.0,
+      "n_markets": 2
+    },
+    {
+      "idx": 79,
+      "day": "Thu",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 80,
+      "day": "Thu",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 81,
+      "day": "Thu",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 82,
+      "day": "Thu",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 83,
+      "day": "Thu",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 84,
+      "day": "Thu",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 85,
+      "day": "Thu",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 86,
+      "day": "Thu",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 87,
+      "day": "Thu",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 88,
+      "day": "Thu",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 89,
+      "day": "Thu",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 90,
+      "day": "Thu",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 91,
+      "day": "Thu",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 92,
+      "day": "Thu",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 93,
+      "day": "Thu",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 94,
+      "day": "Thu",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 95,
+      "day": "Thu",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 96,
+      "day": "Fri",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 97,
+      "day": "Fri",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 98,
+      "day": "Fri",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 99,
+      "day": "Fri",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 100,
+      "day": "Fri",
+      "hour": 4,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 101,
+      "day": "Fri",
+      "hour": 5,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 102,
+      "day": "Fri",
+      "hour": 6,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 103,
+      "day": "Fri",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 104,
+      "day": "Fri",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 105,
+      "day": "Fri",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 106,
+      "day": "Fri",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 107,
+      "day": "Fri",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 108,
+      "day": "Fri",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 109,
+      "day": "Fri",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 110,
+      "day": "Fri",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 111,
+      "day": "Fri",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 112,
+      "day": "Fri",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 113,
+      "day": "Fri",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 114,
+      "day": "Fri",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 115,
+      "day": "Fri",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 116,
+      "day": "Fri",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 117,
+      "day": "Fri",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 118,
+      "day": "Fri",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 119,
+      "day": "Fri",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 120,
+      "day": "Sat",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 121,
+      "day": "Sat",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 122,
+      "day": "Sat",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 123,
+      "day": "Sat",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 124,
+      "day": "Sat",
+      "hour": 4,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 125,
+      "day": "Sat",
+      "hour": 5,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 126,
+      "day": "Sat",
+      "hour": 6,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 127,
+      "day": "Sat",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 128,
+      "day": "Sat",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 129,
+      "day": "Sat",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 130,
+      "day": "Sat",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 131,
+      "day": "Sat",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 132,
+      "day": "Sat",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 133,
+      "day": "Sat",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 134,
+      "day": "Sat",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 135,
+      "day": "Sat",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 136,
+      "day": "Sat",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 137,
+      "day": "Sat",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 138,
+      "day": "Sat",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 139,
+      "day": "Sat",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 140,
+      "day": "Sat",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 141,
+      "day": "Sat",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 142,
+      "day": "Sat",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 143,
+      "day": "Sat",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 144,
+      "day": "Sun",
+      "hour": 0,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 145,
+      "day": "Sun",
+      "hour": 1,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 146,
+      "day": "Sun",
+      "hour": 2,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 147,
+      "day": "Sun",
+      "hour": 3,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 148,
+      "day": "Sun",
+      "hour": 4,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 149,
+      "day": "Sun",
+      "hour": 5,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 150,
+      "day": "Sun",
+      "hour": 6,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 151,
+      "day": "Sun",
+      "hour": 7,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 152,
+      "day": "Sun",
+      "hour": 8,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 153,
+      "day": "Sun",
+      "hour": 9,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 154,
+      "day": "Sun",
+      "hour": 10,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 155,
+      "day": "Sun",
+      "hour": 11,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 156,
+      "day": "Sun",
+      "hour": 12,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 157,
+      "day": "Sun",
+      "hour": 13,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 158,
+      "day": "Sun",
+      "hour": 14,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 159,
+      "day": "Sun",
+      "hour": 15,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 160,
+      "day": "Sun",
+      "hour": 16,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 161,
+      "day": "Sun",
+      "hour": 17,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 162,
+      "day": "Sun",
+      "hour": 18,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 163,
+      "day": "Sun",
+      "hour": 19,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 164,
+      "day": "Sun",
+      "hour": 20,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 165,
+      "day": "Sun",
+      "hour": 21,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 166,
+      "day": "Sun",
+      "hour": 22,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    },
+    {
+      "idx": 167,
+      "day": "Sun",
+      "hour": 23,
+      "avg_pnl": 0.0,
+      "total_pnl": 0.0,
+      "n_markets": 0
+    }
+  ],
+  "daily_rebates": [],
+  "weekly_pnl_hkt": [
+    {
+      "week_start": "2026-05-15",
+      "week_end": "2026-05-21",
+      "n_markets": 15,
+      "n_winners": 11,
+      "n_losers": 4,
+      "win_rate_pct": 73.33333333333333,
+      "total_pnl": -54.669297,
+      "total_rebates": 0.0
+    }
+  ],
+  "extremes": {
+    "best": {
+      "title": "Bitcoin Up or Down - May 21, 12:40AM-12:45AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779338700,
+      "weighted_entry_price": 0.7533330448760621,
+      "n_buys": 6,
+      "total_buy_size": 74.996665,
+      "pnl": 18.499198999999997,
+      "shares": 25.0,
+      "return_pct": 73.99679599999999
+    },
+    "worst": {
+      "title": "Bitcoin Up or Down - May 21, 1:50AM-1:55AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779342900,
+      "weighted_entry_price": 0.3730032193403293,
+      "n_buys": 9,
+      "total_buy_size": 99.986633,
+      "pnl": -38.116556,
+      "shares": 25.0,
+      "return_pct": -152.466224
+    }
+  },
+  "recent": [
+    {
+      "title": "Bitcoin Up or Down - May 21, 2:20AM-2:25AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779344700,
+      "weighted_entry_price": 0.975,
+      "n_buys": 2,
+      "total_buy_size": 50.0,
+      "pnl": 1.25,
+      "shares": 25.0,
+      "return_pct": 5.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 2:15AM-2:20AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779344400,
+      "weighted_entry_price": 0.97,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 0.75,
+      "shares": 25.0,
+      "return_pct": 3.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:50AM-1:55AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779342900,
+      "weighted_entry_price": 0.3730032193403293,
+      "n_buys": 9,
+      "total_buy_size": 99.986633,
+      "pnl": -38.116556,
+      "shares": 25.0,
+      "return_pct": -152.466224
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:45AM-1:50AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779342600,
+      "weighted_entry_price": 0.99,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 0.25,
+      "shares": 25.0,
+      "return_pct": 1.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:40AM-1:45AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779342300,
+      "weighted_entry_price": 0.99,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 0.25,
+      "shares": 25.0,
+      "return_pct": 1.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:30AM-1:35AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779341700,
+      "weighted_entry_price": 0.38,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": -9.5,
+      "shares": 25.0,
+      "return_pct": -38.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:20AM-1:25AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779341100,
+      "weighted_entry_price": 0.895,
+      "n_buys": 4,
+      "total_buy_size": 50.0,
+      "pnl": 5.25,
+      "shares": 25.0,
+      "return_pct": 21.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:10AM-1:15AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779340500,
+      "weighted_entry_price": 0.99,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 0.25,
+      "shares": 25.0,
+      "return_pct": 1.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 1:00AM-1:05AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779339900,
+      "weighted_entry_price": 0.31,
+      "n_buys": 3,
+      "total_buy_size": 75.0,
+      "pnl": -23.47312,
+      "shares": 25.0,
+      "return_pct": -93.89248
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 12:55AM-1:00AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779339600,
+      "weighted_entry_price": 0.97,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 0.75,
+      "shares": 25.0,
+      "return_pct": 3.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 12:45AM-12:50AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779339000,
+      "weighted_entry_price": 0.89,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 2.5786799999999985,
+      "shares": 25.0,
+      "return_pct": 10.314719999999994
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 12:40AM-12:45AM ET",
+      "outcome": "Down",
+      "market_end_ts": 1779338700,
+      "weighted_entry_price": 0.7533330448760621,
+      "n_buys": 6,
+      "total_buy_size": 74.996665,
+      "pnl": 18.499198999999997,
+      "shares": 25.0,
+      "return_pct": 73.99679599999999
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 12:25AM-12:30AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779337800,
+      "weighted_entry_price": 0.9,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 2.342500000000001,
+      "shares": 25.0,
+      "return_pct": 9.370000000000005
+    },
+    {
+      "title": "Bitcoin Up or Down - May 21, 12:15AM-12:20AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779337200,
+      "weighted_entry_price": 0.64,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": -16.0,
+      "shares": 25.0,
+      "return_pct": -64.0
+    },
+    {
+      "title": "Bitcoin Up or Down - May 20, 11:55PM-12:00AM ET",
+      "outcome": "Up",
+      "market_end_ts": 1779336000,
+      "weighted_entry_price": 0.99,
+      "n_buys": 1,
+      "total_buy_size": 25.0,
+      "pnl": 0.25,
+      "shares": 25.0,
+      "return_pct": 1.0
+    }
+  ],
+  "return_view": {
+    "window_start_ts": 1779335823,
+    "shares_schedule": [
+      {
+        "start_ts": 1779335823,
+        "shares": 25.0
+      }
+    ],
+    "kpi": {
+      "total_return_pct": -218.67718800000003,
+      "n_markets": 15,
+      "n_winners": 11,
+      "n_losers": 4,
+      "win_rate_pct": 73.33333333333333,
+      "avg_return_pct": -14.578479200000002,
+      "median_return_pct": 1.0,
+      "running_days": 1,
+      "total_rebates": 0
+    },
+    "cumulative_return": [
+      {
+        "t": 1779336000000,
+        "v": 1.0
+      },
+      {
+        "t": 1779336300000,
+        "v": 1.0
+      },
+      {
+        "t": 1779336600000,
+        "v": 1.0
+      },
+      {
+        "t": 1779336900000,
+        "v": 1.0
+      },
+      {
+        "t": 1779337200000,
+        "v": -63.0
+      },
+      {
+        "t": 1779337500000,
+        "v": -63.0
+      },
+      {
+        "t": 1779337800000,
+        "v": -53.629999999999995
+      },
+      {
+        "t": 1779338100000,
+        "v": -53.629999999999995
+      },
+      {
+        "t": 1779338400000,
+        "v": -53.629999999999995
+      },
+      {
+        "t": 1779338700000,
+        "v": 20.366795999999994
+      },
+      {
+        "t": 1779339000000,
+        "v": 30.681515999999988
+      },
+      {
+        "t": 1779339300000,
+        "v": 30.681515999999988
+      },
+      {
+        "t": 1779339600000,
+        "v": 33.68151599999999
+      },
+      {
+        "t": 1779339900000,
+        "v": -60.21096400000002
+      },
+      {
+        "t": 1779340200000,
+        "v": -60.21096400000002
+      },
+      {
+        "t": 1779340500000,
+        "v": -59.21096400000002
+      },
+      {
+        "t": 1779340800000,
+        "v": -59.21096400000002
+      },
+      {
+        "t": 1779341100000,
+        "v": -38.21096400000002
+      },
+      {
+        "t": 1779341400000,
+        "v": -38.21096400000002
+      },
+      {
+        "t": 1779341700000,
+        "v": -76.21096400000002
+      },
+      {
+        "t": 1779342000000,
+        "v": -76.21096400000002
+      },
+      {
+        "t": 1779342300000,
+        "v": -75.21096400000002
+      },
+      {
+        "t": 1779342600000,
+        "v": -74.21096400000002
+      },
+      {
+        "t": 1779342900000,
+        "v": -226.67718800000003
+      },
+      {
+        "t": 1779343200000,
+        "v": -226.67718800000003
+      },
+      {
+        "t": 1779343500000,
+        "v": -226.67718800000003
+      },
+      {
+        "t": 1779343800000,
+        "v": -226.67718800000003
+      },
+      {
+        "t": 1779344100000,
+        "v": -226.67718800000003
+      },
+      {
+        "t": 1779344400000,
+        "v": -223.67718800000003
+      },
+      {
+        "t": 1779344700000,
+        "v": -218.67718800000003
+      }
+    ],
+    "regime": [
+      {
+        "bin": "[0.0,0.1)",
+        "avg_pnl": 0.0,
+        "n_markets": 0,
+        "total_pnl": 0.0
+      },
+      {
+        "bin": "[0.1,0.2)",
+        "avg_pnl": 0.0,
+        "n_markets": 0,
+        "total_pnl": 0.0
+      },
+      {
+        "bin": "[0.2,0.3)",
+        "avg_pnl": 0.0,
+        "n_markets": 0,
+        "total_pnl": 0.0
+      },
+      {
+        "bin": "[0.3,0.4)",
+        "avg_pnl": -94.78623466666666,
+        "n_markets": 3,
+        "total_pnl": -284.358704
+      },
+      {
+        "bin": "[0.4,0.5)",
+        "avg_pnl": 0.0,
+        "n_markets": 0,
+        "total_pnl": 0.0
+      },
+      {
+        "bin": "[0.5,0.6)",
+        "avg_pnl": 0.0,
+        "n_markets": 0,
+        "total_pnl": 0.0
+      },
+      {
+        "bin": "[0.6,0.7)",
+        "avg_pnl": -64.0,
+        "n_markets": 1,
+        "total_pnl": -64.0
+      },
+      {
+        "bin": "[0.7,0.8)",
+        "avg_pnl": 73.99679599999999,
+        "n_markets": 1,
+        "total_pnl": 73.99679599999999
+      },
+      {
+        "bin": "[0.8,0.9)",
+        "avg_pnl": 15.657359999999997,
+        "n_markets": 2,
+        "total_pnl": 31.314719999999994
+      },
+      {
+        "bin": "[0.9,1.0]",
+        "avg_pnl": 3.0462500000000006,
+        "n_markets": 8,
+        "total_pnl": 24.370000000000005
+      }
+    ],
+    "regime_hourly": [
+      {
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 4,
+        "avg_pnl": 6.136303199999998,
+        "total_pnl": 30.681515999999988,
+        "n_markets": 5
+      },
+      {
+        "hour": 5,
+        "avg_pnl": -32.169838,
+        "total_pnl": -257.358704,
+        "n_markets": 8
+      },
+      {
+        "hour": 6,
+        "avg_pnl": 4.0,
+        "total_pnl": 8.0,
+        "n_markets": 2
+      },
+      {
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      }
+    ],
+    "regime_weekly": [
+      {
+        "idx": 0,
+        "day": "Mon",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 1,
+        "day": "Mon",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 2,
+        "day": "Mon",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 3,
+        "day": "Mon",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 4,
+        "day": "Mon",
+        "hour": 4,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 5,
+        "day": "Mon",
+        "hour": 5,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 6,
+        "day": "Mon",
+        "hour": 6,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 7,
+        "day": "Mon",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 8,
+        "day": "Mon",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 9,
+        "day": "Mon",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 10,
+        "day": "Mon",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 11,
+        "day": "Mon",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 12,
+        "day": "Mon",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 13,
+        "day": "Mon",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 14,
+        "day": "Mon",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 15,
+        "day": "Mon",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 16,
+        "day": "Mon",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 17,
+        "day": "Mon",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 18,
+        "day": "Mon",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 19,
+        "day": "Mon",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 20,
+        "day": "Mon",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 21,
+        "day": "Mon",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 22,
+        "day": "Mon",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 23,
+        "day": "Mon",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 24,
+        "day": "Tue",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 25,
+        "day": "Tue",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 26,
+        "day": "Tue",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 27,
+        "day": "Tue",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 28,
+        "day": "Tue",
+        "hour": 4,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 29,
+        "day": "Tue",
+        "hour": 5,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 30,
+        "day": "Tue",
+        "hour": 6,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 31,
+        "day": "Tue",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 32,
+        "day": "Tue",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 33,
+        "day": "Tue",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 34,
+        "day": "Tue",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 35,
+        "day": "Tue",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 36,
+        "day": "Tue",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 37,
+        "day": "Tue",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 38,
+        "day": "Tue",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 39,
+        "day": "Tue",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 40,
+        "day": "Tue",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 41,
+        "day": "Tue",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 42,
+        "day": "Tue",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 43,
+        "day": "Tue",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 44,
+        "day": "Tue",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 45,
+        "day": "Tue",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 46,
+        "day": "Tue",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 47,
+        "day": "Tue",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 48,
+        "day": "Wed",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 49,
+        "day": "Wed",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 50,
+        "day": "Wed",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 51,
+        "day": "Wed",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 52,
+        "day": "Wed",
+        "hour": 4,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 53,
+        "day": "Wed",
+        "hour": 5,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 54,
+        "day": "Wed",
+        "hour": 6,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 55,
+        "day": "Wed",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 56,
+        "day": "Wed",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 57,
+        "day": "Wed",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 58,
+        "day": "Wed",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 59,
+        "day": "Wed",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 60,
+        "day": "Wed",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 61,
+        "day": "Wed",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 62,
+        "day": "Wed",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 63,
+        "day": "Wed",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 64,
+        "day": "Wed",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 65,
+        "day": "Wed",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 66,
+        "day": "Wed",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 67,
+        "day": "Wed",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 68,
+        "day": "Wed",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 69,
+        "day": "Wed",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 70,
+        "day": "Wed",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 71,
+        "day": "Wed",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 72,
+        "day": "Thu",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 73,
+        "day": "Thu",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 74,
+        "day": "Thu",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 75,
+        "day": "Thu",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 76,
+        "day": "Thu",
+        "hour": 4,
+        "avg_pnl": 6.136303199999998,
+        "total_pnl": 30.681515999999988,
+        "n_markets": 5
+      },
+      {
+        "idx": 77,
+        "day": "Thu",
+        "hour": 5,
+        "avg_pnl": -32.169838,
+        "total_pnl": -257.358704,
+        "n_markets": 8
+      },
+      {
+        "idx": 78,
+        "day": "Thu",
+        "hour": 6,
+        "avg_pnl": 4.0,
+        "total_pnl": 8.0,
+        "n_markets": 2
+      },
+      {
+        "idx": 79,
+        "day": "Thu",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 80,
+        "day": "Thu",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 81,
+        "day": "Thu",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 82,
+        "day": "Thu",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 83,
+        "day": "Thu",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 84,
+        "day": "Thu",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 85,
+        "day": "Thu",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 86,
+        "day": "Thu",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 87,
+        "day": "Thu",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 88,
+        "day": "Thu",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 89,
+        "day": "Thu",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 90,
+        "day": "Thu",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 91,
+        "day": "Thu",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 92,
+        "day": "Thu",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 93,
+        "day": "Thu",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 94,
+        "day": "Thu",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 95,
+        "day": "Thu",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 96,
+        "day": "Fri",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 97,
+        "day": "Fri",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 98,
+        "day": "Fri",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 99,
+        "day": "Fri",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 100,
+        "day": "Fri",
+        "hour": 4,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 101,
+        "day": "Fri",
+        "hour": 5,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 102,
+        "day": "Fri",
+        "hour": 6,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 103,
+        "day": "Fri",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 104,
+        "day": "Fri",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 105,
+        "day": "Fri",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 106,
+        "day": "Fri",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 107,
+        "day": "Fri",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 108,
+        "day": "Fri",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 109,
+        "day": "Fri",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 110,
+        "day": "Fri",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 111,
+        "day": "Fri",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 112,
+        "day": "Fri",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 113,
+        "day": "Fri",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 114,
+        "day": "Fri",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 115,
+        "day": "Fri",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 116,
+        "day": "Fri",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 117,
+        "day": "Fri",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 118,
+        "day": "Fri",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 119,
+        "day": "Fri",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 120,
+        "day": "Sat",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 121,
+        "day": "Sat",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 122,
+        "day": "Sat",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 123,
+        "day": "Sat",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 124,
+        "day": "Sat",
+        "hour": 4,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 125,
+        "day": "Sat",
+        "hour": 5,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 126,
+        "day": "Sat",
+        "hour": 6,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 127,
+        "day": "Sat",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 128,
+        "day": "Sat",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 129,
+        "day": "Sat",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 130,
+        "day": "Sat",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 131,
+        "day": "Sat",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 132,
+        "day": "Sat",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 133,
+        "day": "Sat",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 134,
+        "day": "Sat",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 135,
+        "day": "Sat",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 136,
+        "day": "Sat",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 137,
+        "day": "Sat",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 138,
+        "day": "Sat",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 139,
+        "day": "Sat",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 140,
+        "day": "Sat",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 141,
+        "day": "Sat",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 142,
+        "day": "Sat",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 143,
+        "day": "Sat",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 144,
+        "day": "Sun",
+        "hour": 0,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 145,
+        "day": "Sun",
+        "hour": 1,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 146,
+        "day": "Sun",
+        "hour": 2,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 147,
+        "day": "Sun",
+        "hour": 3,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 148,
+        "day": "Sun",
+        "hour": 4,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 149,
+        "day": "Sun",
+        "hour": 5,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 150,
+        "day": "Sun",
+        "hour": 6,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 151,
+        "day": "Sun",
+        "hour": 7,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 152,
+        "day": "Sun",
+        "hour": 8,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 153,
+        "day": "Sun",
+        "hour": 9,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 154,
+        "day": "Sun",
+        "hour": 10,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 155,
+        "day": "Sun",
+        "hour": 11,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 156,
+        "day": "Sun",
+        "hour": 12,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 157,
+        "day": "Sun",
+        "hour": 13,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 158,
+        "day": "Sun",
+        "hour": 14,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 159,
+        "day": "Sun",
+        "hour": 15,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 160,
+        "day": "Sun",
+        "hour": 16,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 161,
+        "day": "Sun",
+        "hour": 17,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 162,
+        "day": "Sun",
+        "hour": 18,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 163,
+        "day": "Sun",
+        "hour": 19,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 164,
+        "day": "Sun",
+        "hour": 20,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 165,
+        "day": "Sun",
+        "hour": 21,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 166,
+        "day": "Sun",
+        "hour": 22,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      },
+      {
+        "idx": 167,
+        "day": "Sun",
+        "hour": 23,
+        "avg_pnl": 0.0,
+        "total_pnl": 0.0,
+        "n_markets": 0
+      }
+    ],
+    "weekly_return_hkt": [
+      {
+        "week_start": "2026-05-15",
+        "week_end": "2026-05-21",
+        "n_markets": 15,
+        "n_winners": 11,
+        "n_losers": 4,
+        "win_rate_pct": 73.33333333333333,
+        "total_pnl": -218.677188,
+        "total_rebates": 0.0
+      }
+    ],
+    "extremes": {
+      "best": {
+        "title": "Bitcoin Up or Down - May 21, 12:40AM-12:45AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779338700,
+        "weighted_entry_price": 0.7533330448760621,
+        "n_buys": 6,
+        "total_buy_size": 74.996665,
+        "pnl": 18.499198999999997,
+        "shares": 25.0,
+        "return_pct": 73.99679599999999
+      },
+      "worst": {
+        "title": "Bitcoin Up or Down - May 21, 1:50AM-1:55AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779342900,
+        "weighted_entry_price": 0.3730032193403293,
+        "n_buys": 9,
+        "total_buy_size": 99.986633,
+        "pnl": -38.116556,
+        "shares": 25.0,
+        "return_pct": -152.466224
+      }
+    },
+    "recent": [
+      {
+        "title": "Bitcoin Up or Down - May 21, 2:20AM-2:25AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779344700,
+        "weighted_entry_price": 0.975,
+        "n_buys": 2,
+        "total_buy_size": 50.0,
+        "pnl": 1.25,
+        "shares": 25.0,
+        "return_pct": 5.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 2:15AM-2:20AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779344400,
+        "weighted_entry_price": 0.97,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 0.75,
+        "shares": 25.0,
+        "return_pct": 3.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:50AM-1:55AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779342900,
+        "weighted_entry_price": 0.3730032193403293,
+        "n_buys": 9,
+        "total_buy_size": 99.986633,
+        "pnl": -38.116556,
+        "shares": 25.0,
+        "return_pct": -152.466224
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:45AM-1:50AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779342600,
+        "weighted_entry_price": 0.99,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 0.25,
+        "shares": 25.0,
+        "return_pct": 1.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:40AM-1:45AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779342300,
+        "weighted_entry_price": 0.99,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 0.25,
+        "shares": 25.0,
+        "return_pct": 1.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:30AM-1:35AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779341700,
+        "weighted_entry_price": 0.38,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": -9.5,
+        "shares": 25.0,
+        "return_pct": -38.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:20AM-1:25AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779341100,
+        "weighted_entry_price": 0.895,
+        "n_buys": 4,
+        "total_buy_size": 50.0,
+        "pnl": 5.25,
+        "shares": 25.0,
+        "return_pct": 21.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:10AM-1:15AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779340500,
+        "weighted_entry_price": 0.99,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 0.25,
+        "shares": 25.0,
+        "return_pct": 1.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 1:00AM-1:05AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779339900,
+        "weighted_entry_price": 0.31,
+        "n_buys": 3,
+        "total_buy_size": 75.0,
+        "pnl": -23.47312,
+        "shares": 25.0,
+        "return_pct": -93.89248
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 12:55AM-1:00AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779339600,
+        "weighted_entry_price": 0.97,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 0.75,
+        "shares": 25.0,
+        "return_pct": 3.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 12:45AM-12:50AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779339000,
+        "weighted_entry_price": 0.89,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 2.5786799999999985,
+        "shares": 25.0,
+        "return_pct": 10.314719999999994
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 12:40AM-12:45AM ET",
+        "outcome": "Down",
+        "market_end_ts": 1779338700,
+        "weighted_entry_price": 0.7533330448760621,
+        "n_buys": 6,
+        "total_buy_size": 74.996665,
+        "pnl": 18.499198999999997,
+        "shares": 25.0,
+        "return_pct": 73.99679599999999
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 12:25AM-12:30AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779337800,
+        "weighted_entry_price": 0.9,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 2.342500000000001,
+        "shares": 25.0,
+        "return_pct": 9.370000000000005
+      },
+      {
+        "title": "Bitcoin Up or Down - May 21, 12:15AM-12:20AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779337200,
+        "weighted_entry_price": 0.64,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": -16.0,
+        "shares": 25.0,
+        "return_pct": -64.0
+      },
+      {
+        "title": "Bitcoin Up or Down - May 20, 11:55PM-12:00AM ET",
+        "outcome": "Up",
+        "market_end_ts": 1779336000,
+        "weighted_entry_price": 0.99,
+        "n_buys": 1,
+        "total_buy_size": 25.0,
+        "pnl": 0.25,
+        "shares": 25.0,
+        "return_pct": 1.0
+      }
+    ]
+  }
+}
