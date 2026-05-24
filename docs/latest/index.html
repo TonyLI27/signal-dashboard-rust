@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>Rust Bot Signal Dashboard — 2026-05-23</title>
+<title>Rust Bot Signal Dashboard — 2026-05-24</title>
 <style>
 :root {
   --navy: #1F3B66; --navy-deep: #122844; --navy-light: #3F6BA8;
@@ -140,7 +140,7 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
 <aside class="sidebar">
   <div class="brand-mini">
     Signal Dashboard · RUST
-    <span class="date">2026-05-23</span>
+    <span class="date">2026-05-24</span>
   </div>
 
   <div class="section">
@@ -180,10 +180,10 @@ td.label { color: var(--gray-warm-dark); font-size: 12px; }
   <div class="brand">5min BTC · Rust Bot Dashboard <span class="badge">RUST</span></div>
   <div class="subtitle">自给自足：每天自行刷新源数据 + 跑线下回测 + 实盘 PnL + tie-out，验证新 Rust bot 行为，并导出 user_tag 给交易系统。</div>
   <div class="meta-row">
-    <span>报告日期 · <b>2026-05-23</b></span>
+    <span>报告日期 · <b>2026-05-24</b></span>
     <span>bot · <code>poly_temp_bot_stable</code> (Rust)</span>
     <span>funder · <code>0xb541…169d</code></span>
-    <span>Anchor · <b>2026-05-23 12:52 UTC</b></span>
+    <span>Anchor · <b>2026-05-24 01:09 UTC</b></span>
     <span>有效信号 · <b>3 / 3</b></span>
   </div>
 </div>
@@ -204,7 +204,7 @@ tie-out，并把 user_tag 导出到交易系统 + S3。不依赖任何外部项�
 
 <h2>分窗口指标（净 PnL 口径）</h2>
 <h3><span class="section-tag">指标</span>近 24 小时滚动</h3>
-<p class="meta">窗口：2026-05-22 12:52 → 2026-05-23 12:52 UTC</p>
+<p class="meta">窗口：2026-05-23 01:09 → 2026-05-24 01:09 UTC</p>
 <table>
 <thead><tr>
 <th>信号</th><th>Sharpe</th><th>终值净 PnL</th>
@@ -212,13 +212,13 @@ tie-out，并把 user_tag 导出到交易系统 + S3。不依赖任何外部项�
 <th>胜率</th><th>Net ROT</th><th>Gross ROT</th><th>交易日数</th>
 </tr></thead>
 <tbody>
-<tr><td class="sig"><a href="online_tag7k_entry14.html"><code>online_tag7k_entry14</code></a><br><span class="label">线上 · pnl_cumsum · TAG=$7,000 · Entry=14% · 跳过美东周末</span></td><td class="num">3.04</td><td class="num"><span class="pos">$1.04</span></td><td class="num">16</td><td class="num">292</td><td class="num">5.5%</td><td class="num">62.5%</td><td class="num"><span class="pos">0.0649</span></td><td class="num"><span class="pos">0.0900</span></td><td class="num">2</td></tr>
-<tr><td class="sig"><a href="tte1_conf82_entry07.html"><code>tte1_conf82_entry07</code></a><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">-27.35</td><td class="num"><span class="neg">$-4.73</span></td><td class="num">156</td><td class="num">292</td><td class="num">53.4%</td><td class="num">67.9%</td><td class="num"><span class="neg">-0.0608</span></td><td class="num"><span class="neg">-0.0480</span></td><td class="num">2</td></tr>
-<tr><td class="sig"><a href="new_user_big4k_entry45.html"><code>new_user_big4k_entry45</code></a><br><span class="label">new_user (first-day) · big_thr=$4,000 · Entry=45% · TTE 1-4 earliest-trigger</span></td><td class="num">-21.56</td><td class="num"><span class="neg">$-2.22</span></td><td class="num">11</td><td class="num">292</td><td class="num">3.8%</td><td class="num">27.3%</td><td class="num"><span class="neg">-0.2015</span></td><td class="num"><span class="neg">-0.1823</span></td><td class="num">2</td></tr>
+<tr><td class="sig"><a href="online_tag7k_entry14.html"><code>online_tag7k_entry14</code></a><br><span class="label">线上 · pnl_cumsum · TAG=$7,000 · Entry=14% · 跳过美东周末</span></td><td class="num">—</td><td class="num"><span class="neg">$-2.01</span></td><td class="num">3</td><td class="num">291</td><td class="num">1.0%</td><td class="num">0.0%</td><td class="num"><span class="neg">-0.6700</span></td><td class="num"><span class="neg">-0.6650</span></td><td class="num">1</td></tr>
+<tr><td class="sig"><a href="tte1_conf82_entry07.html"><code>tte1_conf82_entry07</code></a><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">-11.23</td><td class="num"><span class="neg">$-0.21</span></td><td class="num">142</td><td class="num">291</td><td class="num">48.8%</td><td class="num">74.6%</td><td class="num"><span class="neg">-0.0026</span></td><td class="num"><span class="pos">0.0114</span></td><td class="num">2</td></tr>
+<tr><td class="sig"><a href="new_user_big4k_entry45.html"><code>new_user_big4k_entry45</code></a><br><span class="label">new_user (first-day) · big_thr=$4,000 · Entry=45% · TTE 1-4 earliest-trigger</span></td><td class="num">—</td><td class="num"><span class="neg">$-2.24</span></td><td class="num">17</td><td class="num">291</td><td class="num">5.8%</td><td class="num">41.2%</td><td class="num"><span class="neg">-0.1315</span></td><td class="num"><span class="neg">-0.1103</span></td><td class="num">1</td></tr>
 </tbody>
 </table>
 <h3><span class="section-tag">指标</span>近 7 日滚动</h3>
-<p class="meta">窗口：2026-05-16 → 2026-05-23 12:52 UTC</p>
+<p class="meta">窗口：2026-05-17 → 2026-05-24 01:09 UTC</p>
 <table>
 <thead><tr>
 <th>信号</th><th>Sharpe</th><th>终值净 PnL</th>
@@ -226,9 +226,9 @@ tie-out，并把 user_tag 导出到交易系统 + S3。不依赖任何外部项�
 <th>胜率</th><th>Net ROT</th><th>Gross ROT</th><th>交易日数</th>
 </tr></thead>
 <tbody>
-<tr><td class="sig"><a href="online_tag7k_entry14.html"><code>online_tag7k_entry14</code></a><br><span class="label">线上 · pnl_cumsum · TAG=$7,000 · Entry=14% · 跳过美东周末</span></td><td class="num">-0.35</td><td class="num"><span class="neg">$-0.28</span></td><td class="num">159</td><td class="num">2020</td><td class="num">7.9%</td><td class="num">61.0%</td><td class="num"><span class="neg">-0.0018</span></td><td class="num"><span class="pos">0.0198</span></td><td class="num">6</td></tr>
-<tr><td class="sig"><a href="tte1_conf82_entry07.html"><code>tte1_conf82_entry07</code></a><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">3.93</td><td class="num"><span class="pos">$6.31</span></td><td class="num">1222</td><td class="num">2020</td><td class="num">60.5%</td><td class="num">72.5%</td><td class="num"><span class="pos">0.0087</span></td><td class="num"><span class="pos">0.0248</span></td><td class="num">8</td></tr>
-<tr><td class="sig"><a href="new_user_big4k_entry45.html"><code>new_user_big4k_entry45</code></a><br><span class="label">new_user (first-day) · big_thr=$4,000 · Entry=45% · TTE 1-4 earliest-trigger</span></td><td class="num">-4.26</td><td class="num"><span class="neg">$-2.28</span></td><td class="num">62</td><td class="num">2020</td><td class="num">3.1%</td><td class="num">30.6%</td><td class="num"><span class="neg">-0.0368</span></td><td class="num"><span class="neg">-0.0165</span></td><td class="num">8</td></tr>
+<tr><td class="sig"><a href="online_tag7k_entry14.html"><code>online_tag7k_entry14</code></a><br><span class="label">线上 · pnl_cumsum · TAG=$7,000 · Entry=14% · 跳过美东周末</span></td><td class="num">-0.35</td><td class="num"><span class="neg">$-0.28</span></td><td class="num">159</td><td class="num">2018</td><td class="num">7.9%</td><td class="num">61.0%</td><td class="num"><span class="neg">-0.0018</span></td><td class="num"><span class="pos">0.0198</span></td><td class="num">6</td></tr>
+<tr><td class="sig"><a href="tte1_conf82_entry07.html"><code>tte1_conf82_entry07</code></a><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">2.57</td><td class="num"><span class="pos">$4.00</span></td><td class="num">1180</td><td class="num">2018</td><td class="num">58.5%</td><td class="num">73.4%</td><td class="num"><span class="pos">0.0058</span></td><td class="num"><span class="pos">0.0213</span></td><td class="num">8</td></tr>
+<tr><td class="sig"><a href="new_user_big4k_entry45.html"><code>new_user_big4k_entry45</code></a><br><span class="label">new_user (first-day) · big_thr=$4,000 · Entry=45% · TTE 1-4 earliest-trigger</span></td><td class="num">-6.28</td><td class="num"><span class="neg">$-3.22</span></td><td class="num">69</td><td class="num">2018</td><td class="num">3.4%</td><td class="num">31.9%</td><td class="num"><span class="neg">-0.0467</span></td><td class="num"><span class="neg">-0.0272</span></td><td class="num">7</td></tr>
 </tbody>
 </table>
 <h3><span class="section-tag">指标</span>OOS 全样本</h3>
@@ -240,9 +240,9 @@ tie-out，并把 user_tag 导出到交易系统 + S3。不依赖任何外部项�
 <th>胜率</th><th>Net ROT</th><th>Gross ROT</th><th>交易日数</th>
 </tr></thead>
 <tbody>
-<tr><td class="sig"><a href="online_tag7k_entry14.html"><code>online_tag7k_entry14</code></a><br><span class="label">线上 · pnl_cumsum · TAG=$7,000 · Entry=14% · 跳过美东周末</span></td><td class="num">3.22</td><td class="num"><span class="pos">$15.48</span></td><td class="num">1483</td><td class="num">15104</td><td class="num">9.8%</td><td class="num">64.5%</td><td class="num"><span class="pos">0.0104</span></td><td class="num"><span class="pos">0.0308</span></td><td class="num">47</td></tr>
-<tr><td class="sig"><a href="tte1_conf82_entry07.html"><code>tte1_conf82_entry07</code></a><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">4.21</td><td class="num"><span class="pos">$36.26</span></td><td class="num">7719</td><td class="num">15104</td><td class="num">51.1%</td><td class="num">69.1%</td><td class="num"><span class="pos">0.0082</span></td><td class="num"><span class="pos">0.0247</span></td><td class="num">55</td></tr>
-<tr><td class="sig"><a href="new_user_big4k_entry45.html"><code>new_user_big4k_entry45</code></a><br><span class="label">new_user (first-day) · big_thr=$4,000 · Entry=45% · TTE 1-4 earliest-trigger</span></td><td class="num">3.81</td><td class="num"><span class="pos">$15.38</span></td><td class="num">742</td><td class="num">15104</td><td class="num">4.9%</td><td class="num">39.1%</td><td class="num"><span class="pos">0.0207</span></td><td class="num"><span class="pos">0.0438</span></td><td class="num">55</td></tr>
+<tr><td class="sig"><a href="online_tag7k_entry14.html"><code>online_tag7k_entry14</code></a><br><span class="label">线上 · pnl_cumsum · TAG=$7,000 · Entry=14% · 跳过美东周末</span></td><td class="num">3.22</td><td class="num"><span class="pos">$15.48</span></td><td class="num">1483</td><td class="num">15249</td><td class="num">9.7%</td><td class="num">64.5%</td><td class="num"><span class="pos">0.0104</span></td><td class="num"><span class="pos">0.0308</span></td><td class="num">47</td></tr>
+<tr><td class="sig"><a href="tte1_conf82_entry07.html"><code>tte1_conf82_entry07</code></a><br><span class="label">TTE=1 confidence · conf=82% · Entry=7%</span></td><td class="num">4.71</td><td class="num"><span class="pos">$40.72</span></td><td class="num">7836</td><td class="num">15249</td><td class="num">51.4%</td><td class="num">69.4%</td><td class="num"><span class="pos">0.0090</span></td><td class="num"><span class="pos">0.0254</span></td><td class="num">56</td></tr>
+<tr><td class="sig"><a href="new_user_big4k_entry45.html"><code>new_user_big4k_entry45</code></a><br><span class="label">new_user (first-day) · big_thr=$4,000 · Entry=45% · TTE 1-4 earliest-trigger</span></td><td class="num">2.28</td><td class="num"><span class="pos">$10.38</span></td><td class="num">751</td><td class="num">15249</td><td class="num">4.9%</td><td class="num">38.3%</td><td class="num"><span class="pos">0.0138</span></td><td class="num"><span class="pos">0.0364</span></td><td class="num">54</td></tr>
 </tbody>
 </table>
 
@@ -279,7 +279,7 @@ tie-out，并把 user_tag 导出到交易系统 + S3。不依赖任何外部项�
 
 <div class="footer">
 generated by <code>signal_dashboard_for_rust/generate_html.py</code> ·
-数据源 <code>&lt;signal&gt;/output/2026-05-23/</code> 下各信号的
+数据源 <code>&lt;signal&gt;/output/2026-05-24/</code> 下各信号的
 <code>per_trade_pnl.parquet</code> / <code>daily_pnl.parquet</code>
 </div>
 
